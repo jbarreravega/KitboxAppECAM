@@ -11,6 +11,8 @@
     <AssemblyName>KitBoxAPP</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -87,6 +89,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderClient.cs" />
+    <Compile Include="OrderSupplier.cs" />
+    <Compile Include="Status.cs" />
+    <Compile Include="Block.cs" />
+    <Compile Include="Cabinet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
