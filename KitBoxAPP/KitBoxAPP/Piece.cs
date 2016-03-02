@@ -154,31 +154,20 @@ namespace KitBoxAPP
             }
         }
 
-        // À vérifier
         public PriceSupplier[] PriceSuppliers
         {
             get
             {
                 return price_suppliers;
             }
-            set
-            {
-                price_suppliers = value;
-            }
         }
 
-        // À vérifier
         public Color Color
         {
             get
             {
                 return color;
             }
-            set
-            {
-                color = value;
-            }
-
         }
     }
 }

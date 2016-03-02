@@ -23,6 +23,10 @@ namespace KitBoxAPP
             {
                 return code;
             }
+            set
+            {
+                code = value;
+            }
         }
 
         public string Name
@@ -30,6 +34,10 @@ namespace KitBoxAPP
             get
             {
                 return name;
+            }
+            set
+            {
+                name = value;
             }
         }
     }

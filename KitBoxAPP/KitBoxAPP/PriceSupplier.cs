@@ -19,6 +19,14 @@ namespace KitBoxAPP
             this.delivery_time = delivery_time;
         }
 
+        public Supplier Supplier
+        {
+            get
+            {
+                return supplier;
+            }
+        }
+
         public double Price
         {
             get
