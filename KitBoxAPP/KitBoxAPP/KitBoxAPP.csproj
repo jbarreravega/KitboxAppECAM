@@ -53,11 +53,65 @@
     <Compile Include="Home_client.Designer.cs">
       <DependentUpon>Home_client.cs</DependentUpon>
     </Compile>
+    <Compile Include="Home_staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home_staff.Designer.cs">
+      <DependentUpon>Home_staff.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrderStep1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OrderStep1.Designer.cs">
       <DependentUpon>OrderStep1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStep2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderStep2.Designer.cs">
+      <DependentUpon>OrderStep2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStep3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderStep3.Designer.cs">
+      <DependentUpon>OrderStep3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStep4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderStep4.Designer.cs">
+      <DependentUpon>OrderStep4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStep5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderStep5.Designer.cs">
+      <DependentUpon>OrderStep5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStep6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderStep6.Designer.cs">
+      <DependentUpon>OrderStep6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStep7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderStep7.Designer.cs">
+      <DependentUpon>OrderStep7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStep8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderStep8.Designer.cs">
+      <DependentUpon>OrderStep8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStep9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderStep9.Designer.cs">
+      <DependentUpon>OrderStep9.cs</DependentUpon>
     </Compile>
     <Compile Include="Piece.cs" />
     <Compile Include="PriceSupplier.cs" />
@@ -67,8 +121,35 @@
     <EmbeddedResource Include="Home_client.resx">
       <DependentUpon>Home_client.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Home_staff.resx">
+      <DependentUpon>Home_staff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OrderStep1.resx">
       <DependentUpon>OrderStep1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderStep2.resx">
+      <DependentUpon>OrderStep2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderStep3.resx">
+      <DependentUpon>OrderStep3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderStep4.resx">
+      <DependentUpon>OrderStep4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderStep5.resx">
+      <DependentUpon>OrderStep5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderStep6.resx">
+      <DependentUpon>OrderStep6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderStep7.resx">
+      <DependentUpon>OrderStep7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderStep8.resx">
+      <DependentUpon>OrderStep8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderStep9.resx">
+      <DependentUpon>OrderStep9.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

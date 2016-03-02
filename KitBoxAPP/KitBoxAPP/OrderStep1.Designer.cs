@@ -31,7 +31,7 @@
             this.button_next1 = new System.Windows.Forms.Button();
             this.button_home1 = new System.Windows.Forms.Button();
             this.label_Welcome1 = new System.Windows.Forms.Label();
-            this.label_client = new System.Windows.Forms.Label();
+            this.label_client1 = new System.Windows.Forms.Label();
             this.label_step11 = new System.Windows.Forms.Label();
             this.label_step12 = new System.Windows.Forms.Label();
             this.label_step13 = new System.Windows.Forms.Label();
@@ -48,12 +48,13 @@
             this.label_a_client = new System.Windows.Forms.Label();
             this.label_dp = new System.Windows.Forms.Label();
             this.label_name = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.checkBox_yes1 = new System.Windows.Forms.CheckBox();
+            this.checkBox_no1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button_next1
@@ -68,6 +69,7 @@
             // 
             // button_home1
             // 
+            this.button_home1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.button_home1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.button_home1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button_home1.Location = new System.Drawing.Point(722, 12);
@@ -88,19 +90,19 @@
             this.label_Welcome1.TabIndex = 5;
             this.label_Welcome1.Text = "Bienvenue chez KitBox !";
             // 
-            // label_client
+            // label_client1
             // 
-            this.label_client.AutoSize = true;
-            this.label_client.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label_client.Location = new System.Drawing.Point(12, 12);
-            this.label_client.Name = "label_client";
-            this.label_client.Size = new System.Drawing.Size(47, 13);
-            this.label_client.TabIndex = 10;
-            this.label_client.Text = "Clientèle";
+            this.label_client1.AutoSize = true;
+            this.label_client1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label_client1.Location = new System.Drawing.Point(12, 12);
+            this.label_client1.Name = "label_client1";
+            this.label_client1.Size = new System.Drawing.Size(47, 13);
+            this.label_client1.TabIndex = 10;
+            this.label_client1.Text = "Clientèle";
             // 
             // label_step11
             // 
-            this.label_step11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label_step11.BackColor = System.Drawing.Color.Turquoise;
             this.label_step11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label_step11.Location = new System.Drawing.Point(58, 462);
             this.label_step11.Name = "label_step11";
@@ -245,7 +247,7 @@
             this.label_a_client.Name = "label_a_client";
             this.label_a_client.Size = new System.Drawing.Size(300, 30);
             this.label_a_client.TabIndex = 24;
-            this.label_a_client.Text = "Etes-vous déjà client ? OUI-NON";
+            this.label_a_client.Text = "Etes-vous déjà client ? ";
             this.label_a_client.Click += new System.EventHandler(this.label5_Click);
             // 
             // label_dp
@@ -268,17 +270,6 @@
             this.label_name.Size = new System.Drawing.Size(300, 30);
             this.label_name.TabIndex = 26;
             this.label_name.Text = "Votre nom :";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(440, 308);
-            this.textBox1.MaximumSize = new System.Drawing.Size(300, 30);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 30);
-            this.textBox1.TabIndex = 27;
             // 
             // textBox2
             // 
@@ -335,18 +326,42 @@
             this.textBox6.Size = new System.Drawing.Size(300, 30);
             this.textBox6.TabIndex = 32;
             // 
+            // checkBox_yes1
+            // 
+            this.checkBox_yes1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.checkBox_yes1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.checkBox_yes1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.checkBox_yes1.Location = new System.Drawing.Point(440, 308);
+            this.checkBox_yes1.Name = "checkBox_yes1";
+            this.checkBox_yes1.Size = new System.Drawing.Size(150, 30);
+            this.checkBox_yes1.TabIndex = 33;
+            this.checkBox_yes1.Text = "OUI";
+            this.checkBox_yes1.UseVisualStyleBackColor = false;
+            // 
+            // checkBox_no1
+            // 
+            this.checkBox_no1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.checkBox_no1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.checkBox_no1.Location = new System.Drawing.Point(590, 308);
+            this.checkBox_no1.Name = "checkBox_no1";
+            this.checkBox_no1.Size = new System.Drawing.Size(150, 30);
+            this.checkBox_no1.TabIndex = 34;
+            this.checkBox_no1.Text = "NON";
+            this.checkBox_no1.UseVisualStyleBackColor = false;
+            // 
             // OrderStep1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(884, 521);
+            this.Controls.Add(this.checkBox_no1);
+            this.Controls.Add(this.checkBox_yes1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label_name);
             this.Controls.Add(this.label_dp);
             this.Controls.Add(this.label_a_client);
@@ -363,7 +378,7 @@
             this.Controls.Add(this.label_step13);
             this.Controls.Add(this.label_step12);
             this.Controls.Add(this.label_step11);
-            this.Controls.Add(this.label_client);
+            this.Controls.Add(this.label_client1);
             this.Controls.Add(this.button_next1);
             this.Controls.Add(this.button_home1);
             this.Controls.Add(this.label_Welcome1);
@@ -380,7 +395,7 @@
         private System.Windows.Forms.Button button_next1;
         private System.Windows.Forms.Button button_home1;
         private System.Windows.Forms.Label label_Welcome1;
-        private System.Windows.Forms.Label label_client;
+        private System.Windows.Forms.Label label_client1;
         private System.Windows.Forms.Label label_step11;
         private System.Windows.Forms.Label label_step12;
         private System.Windows.Forms.Label label_step13;
@@ -397,11 +412,12 @@
         private System.Windows.Forms.Label label_a_client;
         private System.Windows.Forms.Label label_dp;
         private System.Windows.Forms.Label label_name;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.CheckBox checkBox_yes1;
+        private System.Windows.Forms.CheckBox checkBox_no1;
     }
 }
