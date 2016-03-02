@@ -1,0 +1,10 @@
+C:\Users\12079\Desktop\ProjetInfo\KitBoxAPP\KitBoxAPP\bin\Debug\KitBoxAPP.exe.config
+C:\Users\12079\Desktop\ProjetInfo\KitBoxAPP\KitBoxAPP\obj\Debug\KitBoxAPP.Home_client.resources
+C:\Users\12079\Desktop\ProjetInfo\KitBoxAPP\KitBoxAPP\obj\Debug\KitBoxAPP.Properties.Resources.resources
+C:\Users\12079\Desktop\ProjetInfo\KitBoxAPP\KitBoxAPP\obj\Debug\KitBoxAPP.csproj.GenerateResource.Cache
+C:\Users\12079\Desktop\ProjetInfo\KitBoxAPP\KitBoxAPP\bin\Debug\KitBoxAPP.exe
+C:\Users\12079\Desktop\ProjetInfo\KitBoxAPP\KitBoxAPP\bin\Debug\KitBoxAPP.pdb
+C:\Users\12079\Desktop\ProjetInfo\KitBoxAPP\KitBoxAPP\obj\Debug\KitBoxAPP.exe
+C:\Users\12079\Desktop\ProjetInfo\KitBoxAPP\KitBoxAPP\obj\Debug\KitBoxAPP.pdb
+C:\Users\12079\Desktop\ProjetInfo\KitBoxAPP\KitBoxAPP\obj\Debug\KitBoxAPP.OrderStep1.resources
+C:\Users\12079\Desktop\ProjetInfo\KitBoxAPP\KitBoxAPP\obj\Debug\KitBoxAPP.csprojResolveAssemblyReference.cache
