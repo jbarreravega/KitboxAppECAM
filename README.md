@@ -9,11 +9,13 @@ Convention de codage
 Le code est en anglais, mais les commentaires peuvent être en français.
 
 * Variable : minuscule avec underscore.  
-Ex : ma_super_variable
+Ex : `ma_super_variable`
 * Méthode : CamelCase commençant par une majuscule.  
-Ex : MaSuperMethode ()
+Ex : `MaSuperMethode ()`
 * Classe : idem que méthode.
-* Accolade : la première accolade est à la ligne suivante.  
+* Parenthèse : un espace avant l'ouverture d'une parenthèse.
+* Accolade : la première accolade est à la ligne suivante.
+
     MaSuperFonction ()
     {
         if (test == 0)
@@ -25,5 +27,4 @@ Ex : MaSuperMethode ()
             …
         }
     }
-* Parenthèse : des espace avant l'ouverture d'une parenthèse.
 
