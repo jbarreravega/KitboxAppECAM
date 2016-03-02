@@ -15,10 +15,10 @@ namespace KitBoxAPP
         public Home_client()
         {
             InitializeComponent();
-            button_client.BackColor = Color.Black;
-            button_staff.BackColor = Color.Black;
-            button_catalog.BackColor = Color.LightBlue;
-            button_order.BackColor = Color.LightBlue;
+            button_client.BackColor = System.Drawing.Color.Black;
+            button_staff.BackColor = System.Drawing.Color.Black;
+            button_catalog.BackColor = System.Drawing.Color.LightBlue;
+            button_order.BackColor = System.Drawing.Color.LightBlue;
         }
     }
 }
