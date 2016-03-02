@@ -15,8 +15,8 @@ namespace KitBoxAPP
         public OrderStep1()
         {
             InitializeComponent();
-            button_home1.BackColor = Color.DarkRed;
-            button_next1.BackColor = Color.LightBlue;
+            button_home1.BackColor = System.Drawing.Color.DarkRed;
+            button_next1.BackColor = System.Drawing.Color.LightBlue;
         }
 
         private void OrderStep1_Load(object sender, EventArgs e)

@@ -8,3 +8,6 @@ C:\Users\12079\Desktop\ProjetInfo\KitBoxAPP\KitBoxAPP\obj\Debug\KitBoxAPP.exe
 C:\Users\12079\Desktop\ProjetInfo\KitBoxAPP\KitBoxAPP\obj\Debug\KitBoxAPP.pdb
 C:\Users\12079\Desktop\ProjetInfo\KitBoxAPP\KitBoxAPP\obj\Debug\KitBoxAPP.OrderStep1.resources
 C:\Users\12079\Desktop\ProjetInfo\KitBoxAPP\KitBoxAPP\obj\Debug\KitBoxAPP.csprojResolveAssemblyReference.cache
+C:\Users\Sebas\Desktop\KitboxAppECAM\KitBoxAPP\KitBoxAPP\bin\Debug\KitBoxAPP.exe.config
+C:\Users\Sebas\Desktop\KitboxAppECAM\KitBoxAPP\KitBoxAPP\obj\Debug\KitBoxAPP.exe
+C:\Users\Sebas\Desktop\KitboxAppECAM\KitBoxAPP\KitBoxAPP\obj\Debug\KitBoxAPP.pdb
