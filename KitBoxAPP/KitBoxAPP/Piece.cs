@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KitBoxAPP
 {
-    class Piece
+    public class Piece
     {
         private string code, name;
         private int quantity, min_quantity;

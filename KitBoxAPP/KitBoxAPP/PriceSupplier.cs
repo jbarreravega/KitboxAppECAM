@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KitBoxAPP
 {
-    class PriceSupplier
+    public class PriceSupplier
     {
         private Supplier supplier;
         private double price;
