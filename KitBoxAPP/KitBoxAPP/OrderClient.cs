@@ -14,7 +14,7 @@ namespace KitBoxAPP
 			address_client = "";
 		}
 
-		public double Price ()
+		public override double Price ()
 		{
 			// To be implemented
 			return 0.0;

@@ -19,7 +19,7 @@ namespace KitBoxAPP
 
 		public void AddPiece (Piece piece)
 		{
-			pieces.Add (piece);
+			this.pieces.Add (piece);
 		}
 
 		public Piece RemovePiece (string code_piece)
