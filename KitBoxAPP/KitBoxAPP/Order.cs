@@ -15,6 +15,12 @@ namespace KitBoxAPP
 			status = new Status ();
 		}
 
+		public Order(List<Piece> pieces) : this ()
+		{
+			this.pieces = pieces;
+		}
+
+
 		public abstract double Price ();
 
 		public void AddPiece (Piece piece)

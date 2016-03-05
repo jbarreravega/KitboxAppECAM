@@ -14,6 +14,13 @@ namespace KitBoxAPP
 			address_client = "";
 		}
 
+		public OrderClient (string name_client, string address_client,
+		                    List<Piece> pieces) : base (pieces)
+		{
+			this.name_client = name_client;
+			this.address_client = address_client;
+		}
+
 		public override double Price ()
 		{
 			// To be implemented
@@ -33,7 +40,6 @@ namespace KitBoxAPP
 			get { return address_client; }
 			set { address_client = value; }
 		}
-
 	}
 }
 
