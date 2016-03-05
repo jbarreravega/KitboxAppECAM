@@ -8,6 +8,12 @@ namespace KitBoxAPP
 		private int code;
 		private string name;
 
+		public Status ()
+		{
+			code = -1;
+			name = "";
+		}
+
 		public Status (int code, string name)
 		{
 			this.code = code;
