@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KitBoxAPP
 {
-    class OrderWizard
+    public class OrderWizard
     {
         private Furniture furniture;
         private string name_client, address_client;
@@ -21,7 +21,8 @@ namespace KitBoxAPP
 
         public Order CreateOrder()
         {
-            return Nullable;
+			// not implemented yet
+            return null;
         }
     }
 }

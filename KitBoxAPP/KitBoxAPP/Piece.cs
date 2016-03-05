@@ -34,6 +34,27 @@ namespace KitBoxAPP
             this.price_suppliers = price_suppliers;
         }
 
+		
+		/*
+		 * Return the total price_client for the quantity in this object.
+		 */
+		public double TotalPriceClient()
+		{
+			return PriceClient * Quantity;
+		}
+
+		/*
+		 * Return the total price_supplier of the supplier given in args for 
+		 * the quantity in this object.
+		 */
+		public double TotalPriceSupplier(Supplier supplier)
+		{
+			// Not implemented yet
+			return 0.0;
+		}
+
+		// Properties
+
         public string Code
         {
             get

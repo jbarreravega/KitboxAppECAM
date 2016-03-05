@@ -178,6 +178,8 @@
     <Compile Include="Status.cs" />
     <Compile Include="Block.cs" />
     <Compile Include="Cabinet.cs" />
+    <Compile Include="Furniture.cs" />
+    <Compile Include="OrderWizard.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

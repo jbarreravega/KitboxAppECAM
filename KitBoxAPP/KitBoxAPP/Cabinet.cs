@@ -8,30 +8,29 @@ namespace KitBoxAPP
 		private double width;
 		private double height;
 		private double depth;
-		private Piece[] batten;
-		private Piece[] back_sleeper;
-		private Piece[] front_sleeper;
-		private Piece[] side_sleeper;
-		private Piece[] updown_panel;
-		private Piece[] side_panel;
-		private Piece back_panel;
-		private Piece[] doors;
-		private Piece[] handle;
+		private Piece batten; // 4
+		private Piece back_sleeper; // 2
+		private Piece front_sleeper; // 2
+		private Piece side_sleeper; // 2
+		private Piece updown_panel; // 2
+		private Piece side_panel; // 2
+		private Piece back_panel; // 1
+		private Piece doors; // 0-2
+		private Piece handle; // 0-2
 
 		public Cabinet ()
 		{
 			width = 0.0;
-			height = 0.0;
 			depth = 0.0;
-			batten = new Piece[4];
-			back_sleeper = new Piece[2];
-			front_sleeper = new Piece[2];
-			side_sleeper = new Piece[2];
-			updown_panel = new Piece[2];
-			side_panel = new Piece[2];
+			batten = null;
+			back_sleeper = null;
+			front_sleeper = null;
+			side_sleeper = null;
+			updown_panel = null;
+			side_panel = null;
 			back_panel = null;
-			doors = new Piece[2];
-			handle = new Piece[2];
+			doors = null;
+			handle = null;
 		}
 
 		// Properties
@@ -44,7 +43,7 @@ namespace KitBoxAPP
 
 				foreach (Piece p in this.Pieces)
 				{
-					price += p.PriceClient;
+					price += p.TotalPriceClient ();
 				}
 
 				return price;
@@ -57,50 +56,28 @@ namespace KitBoxAPP
 			get
 			{
 				List<Piece> res = new List<Piece> ();
-				foreach (Piece p in batten)
-				{
-					res.Add (p);
-				}
-				foreach (Piece p in back_sleeper)
-				{
-					res.Add (p);
-				}
-				foreach (Piece p in front_sleeper)
-				{
-					res.Add (p);
-				}
-				foreach (Piece p in side_sleeper)
-				{
-					res.Add (p);
-				}
-				foreach (Piece p in updown_panel)
-				{
-					res.Add (p);
-				}
-				foreach (Piece p in side_panel)
-				{
-					res.Add (p);
-				}
-				foreach (Piece p in doors)
-				{
-					res.Add (p);
-				}
-				foreach (Piece p in handle)
-				{
-					res.Add (p);
-				}
+				res.Add (batten);
+				res.Add (back_sleeper);
+				res.Add (front_sleeper);
+				res.Add (side_sleeper);
+				res.Add (updown_panel);
+				res.Add (side_panel);
+				res.Add (doors);
+				res.Add (handle);
 				res.Add (back_panel);
 				return res;
 			}
 		}
-
-		public double Width
+		
+		public double Height
 		{
-			get;
-			set;
+			get
+			{
+				return batten.Height + 2 * 2;
+			}
 		}
 
-		public double Height
+		public double Width
 		{
 			get;
 			set;
@@ -112,37 +89,37 @@ namespace KitBoxAPP
 			set;
 		}
 
-		public Piece[] Batten
+		public Piece Batten
 		{
 			get;
 			set;
 		}
 
-		public Piece[] BackSleeper
+		public Piece BackSleeper
 		{
 			get;
 			set;
 		}
 
-		public Piece[] FrontSleeper
+		public Piece FrontSleeper
 		{
 			get;
 			set;
 		}
 
-		public Piece[] SideSleeper
+		public Piece SideSleeper
 		{
 			get;
 			set;
 		}
 
-		public Piece[] UpdownPanel
+		public Piece UpdownPanel
 		{
 			get;
 			set;
 		}
 
-		public Piece[] SidePanel
+		public Piece SidePanel
 		{
 			get;
 			set;
@@ -154,13 +131,13 @@ namespace KitBoxAPP
 			set;
 		}
 
-		public Piece[] Doors
+		public Piece Doors
 		{
 			get;
 			set;
 		}
 
-		public Piece[] Handle
+		public Piece Handle
 		{
 			get;
 			set;
