@@ -19,6 +19,7 @@ Global
 		Policies = $0
 		$0.TextStylePolicy = $1
 		$1.TabsToSpaces = False
+		$1.EolMarker = Windows
 		$1.inheritsSet = VisualStudio
 		$1.inheritsScope = text/plain
 		$1.scope = text/x-csharp
@@ -160,6 +161,9 @@ Global
 		$24.NamingStyle = PascalCase
 		$24.IncludeInstanceMembers = True
 		$24.IncludeStaticEntities = True
+		$0.DotNetNamingPolicy = $26
+		$26.DirectoryNamespaceAssociation = None
+		$26.ResourceNamePolicy = FileFormatDefault
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
