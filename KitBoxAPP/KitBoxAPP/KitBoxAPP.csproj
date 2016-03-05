@@ -180,6 +180,8 @@
     <Compile Include="Cabinet.cs" />
     <Compile Include="Furniture.cs" />
     <Compile Include="OrderWizard.cs" />
+    <Compile Include="DBManager.cs" />
+    <Compile Include="StockManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
