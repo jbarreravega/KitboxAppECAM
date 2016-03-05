@@ -15,9 +15,9 @@ namespace KitBoxAPP
         public OrderStep6()
         {
             InitializeComponent();
-            button_home6.BackColor = Color.DarkRed;
-            button_next6.BackColor = Color.LightBlue;
-            button_previous6.BackColor = Color.LightBlue;
+//            button_home6.BackColor = Color.DarkRed;
+//            button_next6.BackColor = Color.LightBlue;
+//            button_previous6.BackColor = Color.LightBlue;
         }
     }
 }

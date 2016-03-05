@@ -15,9 +15,9 @@ namespace KitBoxAPP
         public OrderStep9()
         {
             InitializeComponent();
-            button_home9.BackColor = Color.DarkRed;
-            button_yes9.BackColor = Color.Green;
-            button_no9.BackColor = Color.Red;
+//            button_home9.BackColor = Color.DarkRed;
+//            button_yes9.BackColor = Color.Green;
+//            button_no9.BackColor = Color.Red;
         }
 
         private void label_quotation_Click(object sender, EventArgs e)
