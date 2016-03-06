@@ -8,13 +8,21 @@ namespace KitBoxAPP
 {
     public class Supplier
     {
+		private int code;
         private string name, address;
 
-        public Supplier(string name, string address)
+        public Supplier(int code, string name, string address)
         {
+			this.code = code;
             this.name = name;
             this.address = address;
         }
+
+		public int Code
+		{
+			get;
+			set;
+		}
 
         public string Name
         {

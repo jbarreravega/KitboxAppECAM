@@ -10,9 +10,9 @@ namespace KitBoxAPP
     {
         private Supplier supplier;
         private double price;
-        private DateTime delivery_time;
+        private int delivery_time; // in days
 
-        public PriceSupplier(Supplier supplier, double price, DateTime delivery_time)
+        public PriceSupplier(Supplier supplier, double price, int delivery_time)
         {
             this.supplier = supplier;
             this.price = price;
@@ -39,7 +39,7 @@ namespace KitBoxAPP
             }
         }
 
-        public DateTime DeliveryTime
+        public int DeliveryTime
         {
             get
             {

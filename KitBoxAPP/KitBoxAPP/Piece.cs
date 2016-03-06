@@ -13,13 +13,14 @@ namespace KitBoxAPP
         private int stock_quantity, reserved_quantity;
         private double height, width, depth;
         private double price_client;
-        private PriceSupplier[] price_suppliers;
+        private List<PriceSupplier> price_suppliers;
         private Color color;
 
         public Piece(string code, string name, Color color,
                     double width, double depth, double height,
                     int quantity, int min_quantity, int stock_quantity,
-                    int reserved_quantity, PriceSupplier[] price_suppliers)
+                    int reserved_quantity, double price_client, 
+		            List<PriceSupplier> price_suppliers)
         {
             this.code = code;
             this.name = name;
@@ -31,26 +32,34 @@ namespace KitBoxAPP
             this.min_quantity = min_quantity;
             this.stock_quantity = stock_quantity;
             this.reserved_quantity = reserved_quantity;
+			this.price_client = price_client;
             this.price_suppliers = price_suppliers;
         }
-
 		
-		/*
-		 * Return the total price_client for the quantity in this object.
-		 */
+		/// <summary>
+		/// Totals the price client.
+		/// </summary>
+		/// <returns>The price client.</returns>
 		public double TotalPriceClient()
 		{
 			return PriceClient * Quantity;
 		}
-
-		/*
-		 * Return the total price_supplier of the supplier given in args for 
-		 * the quantity in this object.
-		 */
+		
+		/// <summary>
+		/// Totals the price supplier.
+		/// </summary>
+		/// <returns>The price supplier.</returns>
+		/// <param name="supplier">Supplier.</param>
 		public double TotalPriceSupplier(Supplier supplier)
 		{
 			// Not implemented yet
 			return 0.0;
+		}
+
+		public override string ToString()
+		{
+			string str = Code + " - " + Name + " - " + Quantity;
+			return str;
 		}
 
 		// Properties
@@ -175,7 +184,7 @@ namespace KitBoxAPP
             }
         }
 
-        public PriceSupplier[] PriceSuppliers
+        public List<PriceSupplier> PriceSuppliers
         {
             get
             {

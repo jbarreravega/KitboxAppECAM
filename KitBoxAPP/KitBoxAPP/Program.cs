@@ -14,6 +14,8 @@ namespace KitBoxAPP
         [STAThread]
         static void Main()
         {
+			Test ();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Home_client());
@@ -27,5 +29,14 @@ namespace KitBoxAPP
             //Application.Run(new OrderStep8());
             //Application.Run(new OrderStep9());
         }
-    }
+
+		/// <summary>
+		/// Function to test some code.
+		/// </summary>
+		static void Test ()
+		{
+			DBManager mgr = new DBManager ();
+			mgr.Stock.List ();
+		}
+	}
 }
