@@ -1,5 +1,5 @@
 .separator ";"
-.import kitbox.utf8.csv raw
+.import kitbox.utf8.csv "raw"
 
 -- Create table Color
 CREATE TABLE "Color" (
