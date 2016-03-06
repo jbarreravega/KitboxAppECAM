@@ -20,8 +20,14 @@ namespace KitBoxAPP
 
 		public int Code
 		{
-			get;
-			set;
+			get
+			{
+				return code;
+			}
+			set
+			{
+				code = value;
+			}
 		}
 
         public string Name

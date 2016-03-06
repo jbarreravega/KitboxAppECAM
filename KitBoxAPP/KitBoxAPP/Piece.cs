@@ -44,16 +44,43 @@ namespace KitBoxAPP
 		{
 			return PriceClient * Quantity;
 		}
-		
+
 		/// <summary>
 		/// Totals the price supplier.
 		/// </summary>
 		/// <returns>The price supplier.</returns>
-		/// <param name="supplier">Supplier.</param>
-		public double TotalPriceSupplier(Supplier supplier)
+		/// <param name="code_supplier">Code_supplier.</param>
+		public double TotalPriceSupplier(int code_supplier)
 		{
 			// Not implemented yet
 			return 0.0;
+		}
+
+		public double PriceSupplier(int code_supplier)
+		{
+			foreach (PriceSupplier ps in PriceSuppliers)
+			{
+				Console.WriteLine ("Begin Test"); 
+				Console.WriteLine (ps.Price);
+				Console.WriteLine (code_supplier);
+				if (ps.Supplier.Code == code_supplier)
+				{
+					return ps.Price;
+				}
+			}
+			return -1.0;
+		}
+
+		public int DeliveryTime(int code_supplier)
+		{
+			foreach (PriceSupplier ps in PriceSuppliers)
+			{
+				if (ps.Supplier.Code == code_supplier)
+				{
+					return ps.DeliveryTime;
+				}
+			}
+			return -1;
 		}
 
 		public override string ToString()

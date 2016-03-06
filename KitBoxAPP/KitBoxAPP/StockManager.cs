@@ -118,22 +118,23 @@ namespace KitBoxAPP
 
 			string sql = "UPDATE Stock " +
 				"SET " +
-				"name = " + piece.Name.ToString () + ", " +
-				"height = " + piece.Height.ToString () + ", " +
-				"depth = " + piece.Depth.ToString () + ", " +
-				"width = " + piece.Width.ToString () + ", " +
-				"quantity = " + piece.StockQuantity.ToString () + ", " +
-				"min_quantity = " + piece.MinQuantity.ToString () + ", " +
-				"reserved_quantity = " + piece.ReservedQuantity.ToString () + ", " +
-				"price_client = " + piece.PriceClient.ToString () + ", " +
-				"code_color = " + piece.Color.Code.ToString () + " " +
-				"WHERE code = " + piece.Code.ToString ();
+				"name = \"" + piece.Name.ToString () + "\", " +
+				"height = \"" + piece.Height.ToString () + "\", " +
+				"depth = \"" + piece.Depth.ToString () + "\", " +
+				"width = \"" + piece.Width.ToString () + "\", " +
+				"quantity = \"" + piece.StockQuantity.ToString () + "\", " +
+				"min_quantity = \"" + piece.MinQuantity.ToString () + "\", " +
+				"reserved_quantity = \"" + piece.ReservedQuantity.ToString () + "\", " +
+				"price_client = \"" + piece.PriceClient.ToString () + "\", " +
+				"code_color = \"" + piece.Color.Code.ToString () + "\" " +
+				"WHERE code = \"" + piece.Code.ToString () + "\"";
 
 			db.Open ();
+			
+			Console.WriteLine ("Begin request : " + sql);
 
 			cmd = new SqliteCommand (sql, db);
-
-			Console.WriteLine ("Begin request : " + sql);
+;
 
 			success = cmd.ExecuteNonQuery () > 0;
 
@@ -157,13 +158,14 @@ namespace KitBoxAPP
 				return false;
 
 			string sql = "DELETE FROM Stock " +
-				"WHERE code = " + piece_code;
+				"WHERE code = \"" + piece_code + "\"";
 
 			db.Open ();
+			
+			Console.WriteLine ("Begin request : " + sql);
 
 			cmd = new SqliteCommand (sql, db);
-
-			Console.WriteLine ("Begin request : " + sql);
+;
 
 			success = cmd.ExecuteNonQuery () > 0;
 
@@ -187,29 +189,30 @@ namespace KitBoxAPP
 
 			string sql = "SELECT " +
 				"Stock.code, " +
-					"Stock.name, " +
-					"height, " +
-					"depth, " +
-					"width, " +
-					"quantity, " +
-					"min_quantity, " +
-					"reserved_quantity, " +
-					"price_client, " +
-					"Stock.code_color, " +
-					"Color.name AS color_name " +
-					"FROM Stock " +
-					"INNER JOIN Color ON code_color = Color.code" +
-					"WHERE code = " + code;
+				"Stock.name, " +
+				"height, " +
+				"depth, " +
+				"width, " +
+				"quantity, " +
+				"min_quantity, " +
+				"reserved_quantity, " +
+				"price_client, " +
+				"Stock.code_color, " +
+				"Color.name AS color_name " +
+				"FROM Stock " +
+				"INNER JOIN Color ON code_color = Color.code " +
+				"WHERE Stock.code = \"" + code + "\"";
 
 			db.Open ();
+			
+			Console.WriteLine ("Begin request : " + sql);
 
 			cmd = new SqliteCommand (sql, db);
 			rd = cmd.ExecuteReader ();
-
-			Console.WriteLine ("Begin request : " + sql);
+;
 
 			rd.Read ();
-			piece = CreateObject (rd));
+			piece = CreateObject (rd);
 
 			Console.WriteLine ("End request : " + sql);
 
@@ -244,11 +247,12 @@ namespace KitBoxAPP
 				"INNER JOIN Color ON code_color = Color.code";
 
 			db.Open ();
+			
+			Console.WriteLine ("Begin request : " + sql);
 
 			cmd = new SqliteCommand (sql, db);
 			rd = cmd.ExecuteReader ();
-
-			Console.WriteLine ("Begin request : " + sql);
+;
 
 			while (rd.Read ())
 			{
@@ -271,7 +275,7 @@ namespace KitBoxAPP
 		{
 			Color color = new Color (rd.GetInt32 (rd.GetOrdinal ("code_color")),
 			                         rd.GetString (rd.GetOrdinal ("color_name")));
-			List<PriceSupplier> price_suppliers = GetPriceSupplier (
+			List<PriceSupplier> price_suppliers = GetPriceSuppliers (
 				(string) rd ["code"]
 			);
 			Piece p = new Piece ((string) rd["code"], (string) rd["name"], color, 
@@ -290,7 +294,7 @@ namespace KitBoxAPP
 		/// </summary>
 		/// <returns>The list of the PriceSupplier.</returns>
 		/// <param name="code_piece">Code_piece.</param>
-		private List<PriceSupplier> GetPriceSupplier (string code_piece)
+		private List<PriceSupplier> GetPriceSuppliers (string code_piece)
 		{
 			List<PriceSupplier> lt = new List<PriceSupplier> ();
 
@@ -300,7 +304,10 @@ namespace KitBoxAPP
 			string sql = "SELECT code_supplier, price_supplier, " +
 				"time_delivery, name, address " +
 				"FROM StockSupplier " +
-				"INNER JOIN Supplier ON code_supplier = Supplier.code";
+				"INNER JOIN Supplier ON code_supplier = Supplier.code " +
+				"WHERE code_stock = \"" + code_piece + "\"";
+
+			Console.WriteLine ("Begin request : " + sql);
 
 			// Database already opened in another function
 			cmd = new SqliteCommand (sql, db);
@@ -319,6 +326,8 @@ namespace KitBoxAPP
 					)
 				);
 			}
+
+			Console.WriteLine ("End request : " + sql);
 
 			// Database will be closed in another function
 
