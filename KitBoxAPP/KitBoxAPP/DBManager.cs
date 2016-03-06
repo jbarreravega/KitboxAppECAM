@@ -9,11 +9,15 @@ namespace KitBoxAPP
 		private SqliteConnection db;
 		private StockManager stock;
 
-		public DBManager ()
-		{
-			// Name of the database
-			string db_name = "KitBox.sqlite";
+		public DBManager() : this("KitBox.sqlite") {}
 
+		public DBManager(bool debug) : 
+			this(debug ? "KitBox.sqlite" : "KitBoxTest.sqilte")
+		{
+		}
+
+		public DBManager (string db_name)
+		{
 			// Get the name of the directory where the database is.
 			char[] slash = {'/', '\\'};
 			string dir = Environment.CurrentDirectory;
@@ -43,6 +47,14 @@ namespace KitBoxAPP
 			get
 			{
 				return stock;
+			}
+		}
+
+		public SqliteConnection DB
+		{
+			get
+			{
+				return db;
 			}
 		}
 	}
