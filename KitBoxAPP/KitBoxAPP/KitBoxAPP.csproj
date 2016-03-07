@@ -169,6 +169,24 @@
     <Compile Include="PriceSupplier.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockManagementStep1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockManagementStep1.Designer.cs">
+      <DependentUpon>StockManagementStep1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManagementStep2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockManagementStep2.Designer.cs">
+      <DependentUpon>StockManagementStep2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManagementStep3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockManagementStep3.Designer.cs">
+      <DependentUpon>StockManagementStep3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Supplier.cs" />
     <EmbeddedResource Include="Home_client.resx">
       <DependentUpon>Home_client.cs</DependentUpon>
@@ -206,6 +224,9 @@
     <EmbeddedResource Include="OrdersToAchieveStep1.resx">
       <DependentUpon>OrdersToAchieveStep1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrdersToAchieveStep2.resx">
+      <DependentUpon>OrdersToAchieveStep2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -215,6 +236,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StockManagementStep1.resx">
+      <DependentUpon>StockManagementStep1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManagementStep2.resx">
+      <DependentUpon>StockManagementStep2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManagementStep3.resx">
+      <DependentUpon>StockManagementStep3.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

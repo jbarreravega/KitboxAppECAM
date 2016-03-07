@@ -156,7 +156,7 @@
             // 
             this.label_namePiece2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label_namePiece2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label_namePiece2.Location = new System.Drawing.Point(142, 241);
+            this.label_namePiece2.Location = new System.Drawing.Point(144, 241);
             this.label_namePiece2.Name = "label_namePiece2";
             this.label_namePiece2.Size = new System.Drawing.Size(305, 30);
             this.label_namePiece2.TabIndex = 147;
@@ -167,7 +167,7 @@
             // 
             this.label_colorPiece2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label_colorPiece2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label_colorPiece2.Location = new System.Drawing.Point(447, 241);
+            this.label_colorPiece2.Location = new System.Drawing.Point(449, 241);
             this.label_colorPiece2.Name = "label_colorPiece2";
             this.label_colorPiece2.Size = new System.Drawing.Size(225, 30);
             this.label_colorPiece2.TabIndex = 146;
@@ -178,7 +178,7 @@
             // 
             this.label_amount2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label_amount2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label_amount2.Location = new System.Drawing.Point(672, 241);
+            this.label_amount2.Location = new System.Drawing.Point(674, 241);
             this.label_amount2.Name = "label_amount2";
             this.label_amount2.Size = new System.Drawing.Size(70, 30);
             this.label_amount2.TabIndex = 145;
@@ -189,7 +189,7 @@
             // 
             this.label_namePiece3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label_namePiece3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label_namePiece3.Location = new System.Drawing.Point(142, 278);
+            this.label_namePiece3.Location = new System.Drawing.Point(144, 278);
             this.label_namePiece3.Name = "label_namePiece3";
             this.label_namePiece3.Size = new System.Drawing.Size(305, 30);
             this.label_namePiece3.TabIndex = 150;
@@ -200,7 +200,7 @@
             // 
             this.label_colorPiece3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label_colorPiece3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label_colorPiece3.Location = new System.Drawing.Point(447, 278);
+            this.label_colorPiece3.Location = new System.Drawing.Point(449, 278);
             this.label_colorPiece3.Name = "label_colorPiece3";
             this.label_colorPiece3.Size = new System.Drawing.Size(225, 30);
             this.label_colorPiece3.TabIndex = 149;
@@ -211,7 +211,7 @@
             // 
             this.label_amount3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label_amount3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label_amount3.Location = new System.Drawing.Point(672, 278);
+            this.label_amount3.Location = new System.Drawing.Point(674, 278);
             this.label_amount3.Name = "label_amount3";
             this.label_amount3.Size = new System.Drawing.Size(70, 30);
             this.label_amount3.TabIndex = 148;
