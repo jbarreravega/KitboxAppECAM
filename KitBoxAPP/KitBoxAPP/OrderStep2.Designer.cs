@@ -38,7 +38,6 @@
             this.label_step23 = new System.Windows.Forms.Label();
             this.label_step22 = new System.Windows.Forms.Label();
             this.label_step21 = new System.Windows.Forms.Label();
-            this.label_client2 = new System.Windows.Forms.Label();
             this.button_next2 = new System.Windows.Forms.Button();
             this.button_home2 = new System.Windows.Forms.Button();
             this.label_Welcome2 = new System.Windows.Forms.Label();
@@ -164,16 +163,6 @@
             this.label_step21.TabIndex = 39;
             this.label_step21.Text = "Etape 1";
             this.label_step21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_client2
-            // 
-            this.label_client2.AutoSize = true;
-            this.label_client2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label_client2.Location = new System.Drawing.Point(12, 12);
-            this.label_client2.Name = "label_client2";
-            this.label_client2.Size = new System.Drawing.Size(47, 13);
-            this.label_client2.TabIndex = 38;
-            this.label_client2.Text = "Clientèle";
             // 
             // button_next2
             // 
@@ -364,7 +353,6 @@
             this.Controls.Add(this.label_step23);
             this.Controls.Add(this.label_step22);
             this.Controls.Add(this.label_step21);
-            this.Controls.Add(this.label_client2);
             this.Controls.Add(this.button_next2);
             this.Controls.Add(this.button_home2);
             this.Controls.Add(this.label_Welcome2);
@@ -386,7 +374,6 @@
         private System.Windows.Forms.Label label_step23;
         private System.Windows.Forms.Label label_step22;
         private System.Windows.Forms.Label label_step21;
-        private System.Windows.Forms.Label label_client2;
         private System.Windows.Forms.Button button_next2;
         private System.Windows.Forms.Button button_home2;
         private System.Windows.Forms.Label label_Welcome2;

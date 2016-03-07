@@ -31,7 +31,6 @@
             this.button_next1 = new System.Windows.Forms.Button();
             this.button_home1 = new System.Windows.Forms.Button();
             this.label_Welcome1 = new System.Windows.Forms.Label();
-            this.label_client1 = new System.Windows.Forms.Label();
             this.label_step11 = new System.Windows.Forms.Label();
             this.label_step12 = new System.Windows.Forms.Label();
             this.label_step13 = new System.Windows.Forms.Label();
@@ -89,16 +88,6 @@
             this.label_Welcome1.Size = new System.Drawing.Size(544, 55);
             this.label_Welcome1.TabIndex = 5;
             this.label_Welcome1.Text = "Bienvenue chez KitBox !";
-            // 
-            // label_client1
-            // 
-            this.label_client1.AutoSize = true;
-            this.label_client1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label_client1.Location = new System.Drawing.Point(12, 12);
-            this.label_client1.Name = "label_client1";
-            this.label_client1.Size = new System.Drawing.Size(47, 13);
-            this.label_client1.TabIndex = 10;
-            this.label_client1.Text = "Clientèle";
             // 
             // label_step11
             // 
@@ -378,7 +367,6 @@
             this.Controls.Add(this.label_step13);
             this.Controls.Add(this.label_step12);
             this.Controls.Add(this.label_step11);
-            this.Controls.Add(this.label_client1);
             this.Controls.Add(this.button_next1);
             this.Controls.Add(this.button_home1);
             this.Controls.Add(this.label_Welcome1);
@@ -395,7 +383,6 @@
         private System.Windows.Forms.Button button_next1;
         private System.Windows.Forms.Button button_home1;
         private System.Windows.Forms.Label label_Welcome1;
-        private System.Windows.Forms.Label label_client1;
         private System.Windows.Forms.Label label_step11;
         private System.Windows.Forms.Label label_step12;
         private System.Windows.Forms.Label label_step13;

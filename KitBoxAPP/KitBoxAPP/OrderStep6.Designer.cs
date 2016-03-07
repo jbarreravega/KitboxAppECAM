@@ -49,7 +49,6 @@
             this.label_step63 = new System.Windows.Forms.Label();
             this.label_step62 = new System.Windows.Forms.Label();
             this.label_step61 = new System.Windows.Forms.Label();
-            this.label_client6 = new System.Windows.Forms.Label();
             this.button_next6 = new System.Windows.Forms.Button();
             this.button_home6 = new System.Windows.Forms.Button();
             this.label_Welcome6 = new System.Windows.Forms.Label();
@@ -305,16 +304,6 @@
             this.label_step61.Text = "Etape 1";
             this.label_step61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label_client6
-            // 
-            this.label_client6.AutoSize = true;
-            this.label_client6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label_client6.Location = new System.Drawing.Point(12, 12);
-            this.label_client6.Name = "label_client6";
-            this.label_client6.Size = new System.Drawing.Size(47, 13);
-            this.label_client6.TabIndex = 127;
-            this.label_client6.Text = "Clientèle";
-            // 
             // button_next6
             // 
             this.button_next6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
@@ -374,7 +363,6 @@
             this.Controls.Add(this.label_step63);
             this.Controls.Add(this.label_step62);
             this.Controls.Add(this.label_step61);
-            this.Controls.Add(this.label_client6);
             this.Controls.Add(this.button_next6);
             this.Controls.Add(this.button_home6);
             this.Controls.Add(this.label_Welcome6);
@@ -408,7 +396,6 @@
         private System.Windows.Forms.Label label_step63;
         private System.Windows.Forms.Label label_step62;
         private System.Windows.Forms.Label label_step61;
-        private System.Windows.Forms.Label label_client6;
         private System.Windows.Forms.Button button_next6;
         private System.Windows.Forms.Button button_home6;
         private System.Windows.Forms.Label label_Welcome6;

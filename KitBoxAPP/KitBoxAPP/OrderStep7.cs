@@ -15,9 +15,9 @@ namespace KitBoxAPP
         public OrderStep7()
         {
             InitializeComponent();
-//            button_home7.BackColor = Color.DarkRed;
-//            button_next7.BackColor = Color.LightBlue;
-//            button_previous7.BackColor = Color.LightBlue;
+            button_home7.BackColor = System.Drawing.Color.DarkRed;
+            button_next7.BackColor = System.Drawing.Color.LightBlue;
+            button_previous7.BackColor = System.Drawing.Color.LightBlue;
         }
 
         private void checkBox_doors4_CheckedChanged(object sender, EventArgs e)

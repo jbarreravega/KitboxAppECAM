@@ -15,9 +15,9 @@ namespace KitBoxAPP
         public OrderStep8()
         {
             InitializeComponent();
-//            button_home8.BackColor = Color.DarkRed;
-//            button_yes8.BackColor = Color.Green;
-//            button_no8.BackColor = Color.Red;
+            button_home8.BackColor = System.Drawing.Color.DarkRed;
+            button_yes8.BackColor = System.Drawing.Color.Green;
+            button_no8.BackColor = System.Drawing.Color.Red;
         }
     }
 }

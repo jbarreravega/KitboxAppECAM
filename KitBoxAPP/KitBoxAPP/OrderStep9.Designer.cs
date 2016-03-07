@@ -40,7 +40,6 @@
             this.label_step93 = new System.Windows.Forms.Label();
             this.label_step92 = new System.Windows.Forms.Label();
             this.label_step91 = new System.Windows.Forms.Label();
-            this.label_client9 = new System.Windows.Forms.Label();
             this.button_yes9 = new System.Windows.Forms.Button();
             this.button_home9 = new System.Windows.Forms.Button();
             this.label_Welcome9 = new System.Windows.Forms.Label();
@@ -179,16 +178,6 @@
             this.label_step91.Text = "Etape 1";
             this.label_step91.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label_client9
-            // 
-            this.label_client9.AutoSize = true;
-            this.label_client9.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label_client9.Location = new System.Drawing.Point(12, 12);
-            this.label_client9.Name = "label_client9";
-            this.label_client9.Size = new System.Drawing.Size(47, 13);
-            this.label_client9.TabIndex = 192;
-            this.label_client9.Text = "Clientèle";
-            // 
             // button_yes9
             // 
             this.button_yes9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
@@ -252,7 +241,6 @@
             this.Controls.Add(this.label_step93);
             this.Controls.Add(this.label_step92);
             this.Controls.Add(this.label_step91);
-            this.Controls.Add(this.label_client9);
             this.Controls.Add(this.button_yes9);
             this.Controls.Add(this.button_home9);
             this.Controls.Add(this.label_Welcome9);
@@ -277,7 +265,6 @@
         private System.Windows.Forms.Label label_step93;
         private System.Windows.Forms.Label label_step92;
         private System.Windows.Forms.Label label_step91;
-        private System.Windows.Forms.Label label_client9;
         private System.Windows.Forms.Button button_yes9;
         private System.Windows.Forms.Button button_home9;
         private System.Windows.Forms.Label label_Welcome9;

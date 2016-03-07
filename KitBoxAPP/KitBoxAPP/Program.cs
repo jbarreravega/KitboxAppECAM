@@ -18,7 +18,7 @@ namespace KitBoxAPP
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home_client());
+            //Application.Run(new Home_client());
             //Application.Run(new OrderStep1());
             //Application.Run(new OrderStep2());
             //Application.Run(new OrderStep3());
@@ -28,12 +28,13 @@ namespace KitBoxAPP
             //Application.Run(new OrderStep7());
             //Application.Run(new OrderStep8());
             //Application.Run(new OrderStep9());
+            Application.Run(new Home_staff());
         }
 
-		/// <summary>
-		/// Function to test some code.
-		/// </summary>
-		static void Test ()
+        /// <summary>
+        /// Function to test some code.
+        /// </summary>
+        static void Test ()
 		{
 			DBManager mgr = new DBManager ();
 			mgr.Stock.List ();
