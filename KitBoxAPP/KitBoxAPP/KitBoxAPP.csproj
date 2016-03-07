@@ -159,6 +159,12 @@
     <Compile Include="OrdersToAchieveStep1.Designer.cs">
       <DependentUpon>OrdersToAchieveStep1.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrdersToAchieveStep2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdersToAchieveStep2.Designer.cs">
+      <DependentUpon>OrdersToAchieveStep2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Piece.cs" />
     <Compile Include="PriceSupplier.cs" />
     <Compile Include="Program.cs" />
