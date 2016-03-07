@@ -1,12 +1,12 @@
 using System;
-using Mono.Data.Sqlite;
+using System.Data.SQLite;
 using System.Collections.Generic;
 
 namespace KitBoxAPP
 {
 	public class DBManager
 	{
-		private SqliteConnection db;
+		private SQLiteConnection db;
 		private StockManager stock;
 
 		public DBManager() : this("KitBox.sqlite") {}
@@ -32,7 +32,7 @@ namespace KitBoxAPP
 				dir + db_name
 			);
 
-			db = new SqliteConnection (
+			db = new SQLiteConnection (
 				"Data Source=" + dir + db_name +";Version=3;"
 			);
 
@@ -50,7 +50,7 @@ namespace KitBoxAPP
 			}
 		}
 
-		public SqliteConnection DB
+		public SQLiteConnection DB
 		{
 			get
 			{

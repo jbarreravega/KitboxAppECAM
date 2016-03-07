@@ -1,14 +1,14 @@
 using System;
-using Mono.Data.Sqlite;
+using System.Data.SQLite;
 using System.Collections.Generic;
 
 namespace KitBoxAPP
 {
 	public class StockManager
 	{
-		private SqliteConnection db;
+		private SQLiteConnection db;
 
-		public StockManager (SqliteConnection db)
+		public StockManager (SQLiteConnection db)
 		{
 			this.db = db;
 		}
@@ -37,14 +37,14 @@ namespace KitBoxAPP
 		private bool IsNew (string code)
 		{
 			bool is_new = true;
-			SqliteCommand cmd;
-			SqliteDataReader rd;
+			SQLiteCommand cmd;
+			SQLiteDataReader rd;
 
 			string sql = "SELECT code FROM Stock";
 
 			db.Open ();
 
-			cmd = new SqliteCommand (sql, db);
+			cmd = new SQLiteCommand (sql, db);
 			rd = cmd.ExecuteReader ();
 
 			Console.WriteLine ("Begin request : " + sql);
@@ -68,7 +68,7 @@ namespace KitBoxAPP
 		private bool Add (Piece piece)
 		{
 			bool success = false;
-			SqliteCommand cmd;
+			SQLiteCommand cmd;
 
 			if (piece.Code.Equals (""))
 				return false;
@@ -91,7 +91,7 @@ namespace KitBoxAPP
 
 			db.Open ();
 
-			cmd = new SqliteCommand (sql, db);
+			cmd = new SQLiteCommand (sql, db);
 
 			Console.WriteLine ("Begin request : " + sql);
 
@@ -111,7 +111,7 @@ namespace KitBoxAPP
 		private bool Update (Piece piece)
 		{
 			bool success = false;
-			SqliteCommand cmd;
+			SQLiteCommand cmd;
 
 			if (piece.Code.Equals (""))
 				return false;
@@ -133,7 +133,7 @@ namespace KitBoxAPP
 			
 			Console.WriteLine ("Begin request : " + sql);
 
-			cmd = new SqliteCommand (sql, db);
+			cmd = new SQLiteCommand (sql, db);
 ;
 
 			success = cmd.ExecuteNonQuery () > 0;
@@ -152,7 +152,7 @@ namespace KitBoxAPP
 		public bool Delete (string piece_code)
 		{
 			bool success = false;
-			SqliteCommand cmd;
+			SQLiteCommand cmd;
 
 			if (piece_code.Equals (""))
 				return false;
@@ -164,7 +164,7 @@ namespace KitBoxAPP
 			
 			Console.WriteLine ("Begin request : " + sql);
 
-			cmd = new SqliteCommand (sql, db);
+			cmd = new SQLiteCommand (sql, db);
 ;
 
 			success = cmd.ExecuteNonQuery () > 0;
@@ -184,8 +184,8 @@ namespace KitBoxAPP
 		{
 			Piece piece;
 
-			SqliteCommand cmd;
-			SqliteDataReader rd;
+			SQLiteCommand cmd;
+			SQLiteDataReader rd;
 
 			string sql = "SELECT " +
 				"Stock.code, " +
@@ -207,7 +207,7 @@ namespace KitBoxAPP
 			
 			Console.WriteLine ("Begin request : " + sql);
 
-			cmd = new SqliteCommand (sql, db);
+			cmd = new SQLiteCommand (sql, db);
 			rd = cmd.ExecuteReader ();
 ;
 
@@ -228,8 +228,8 @@ namespace KitBoxAPP
 		{
 			List<Piece> lt = new List<Piece> ();
 
-			SqliteCommand cmd;
-			SqliteDataReader rd;
+			SQLiteCommand cmd;
+			SQLiteDataReader rd;
 
 			string sql = "SELECT " +
 				"Stock.code, " +
@@ -250,7 +250,7 @@ namespace KitBoxAPP
 			
 			Console.WriteLine ("Begin request : " + sql);
 
-			cmd = new SqliteCommand (sql, db);
+			cmd = new SQLiteCommand (sql, db);
 			rd = cmd.ExecuteReader ();
 ;
 
@@ -271,7 +271,7 @@ namespace KitBoxAPP
 		/// </summary>
 		/// <returns>The object.</returns>
 		/// <param name="rd">Rd.</param>
-		private Piece CreateObject(SqliteDataReader rd)
+		private Piece CreateObject(SQLiteDataReader rd)
 		{
 			Color color = new Color (rd.GetInt32 (rd.GetOrdinal ("code_color")),
 			                         rd.GetString (rd.GetOrdinal ("color_name")));
@@ -298,8 +298,8 @@ namespace KitBoxAPP
 		{
 			List<PriceSupplier> lt = new List<PriceSupplier> ();
 
-			SqliteCommand cmd;
-			SqliteDataReader rd;
+			SQLiteCommand cmd;
+			SQLiteDataReader rd;
 
 			string sql = "SELECT code_supplier, price_supplier, " +
 				"time_delivery, name, address " +
@@ -310,7 +310,7 @@ namespace KitBoxAPP
 			Console.WriteLine ("Begin request : " + sql);
 
 			// Database already opened in another function
-			cmd = new SqliteCommand (sql, db);
+			cmd = new SQLiteCommand (sql, db);
 			rd = cmd.ExecuteReader ();
 
 			while (rd.Read ())
