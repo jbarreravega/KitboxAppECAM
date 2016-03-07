@@ -34,7 +34,6 @@
             this.button_client0 = new System.Windows.Forms.Button();
             this.label_Welcome0 = new System.Windows.Forms.Label();
             this.button_orderToDo = new System.Windows.Forms.Button();
-            this.button_catalogModified = new System.Windows.Forms.Button();
             this.button_stock = new System.Windows.Forms.Button();
             this.button_history = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -100,16 +99,6 @@
             this.button_orderToDo.Text = "Commande à réaliser";
             this.button_orderToDo.UseVisualStyleBackColor = true;
             // 
-            // button_catalogModified
-            // 
-            this.button_catalogModified.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button_catalogModified.Location = new System.Drawing.Point(78, 405);
-            this.button_catalogModified.Name = "button_catalogModified";
-            this.button_catalogModified.Size = new System.Drawing.Size(225, 100);
-            this.button_catalogModified.TabIndex = 11;
-            this.button_catalogModified.Text = "Modifier le catalogue";
-            this.button_catalogModified.UseVisualStyleBackColor = true;
-            // 
             // button_stock
             // 
             this.button_stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
@@ -123,7 +112,7 @@
             // button_history
             // 
             this.button_history.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button_history.Location = new System.Drawing.Point(568, 405);
+            this.button_history.Location = new System.Drawing.Point(320, 399);
             this.button_history.Name = "button_history";
             this.button_history.Size = new System.Drawing.Size(225, 100);
             this.button_history.TabIndex = 13;
@@ -138,7 +127,6 @@
             this.ClientSize = new System.Drawing.Size(884, 521);
             this.Controls.Add(this.button_history);
             this.Controls.Add(this.button_stock);
-            this.Controls.Add(this.button_catalogModified);
             this.Controls.Add(this.button_orderToDo);
             this.Controls.Add(this.button_order0);
             this.Controls.Add(this.button_catalog0);
@@ -160,7 +148,6 @@
         private System.Windows.Forms.Button button_client0;
         private System.Windows.Forms.Label label_Welcome0;
         private System.Windows.Forms.Button button_orderToDo;
-        private System.Windows.Forms.Button button_catalogModified;
         private System.Windows.Forms.Button button_stock;
         private System.Windows.Forms.Button button_history;
     }
