@@ -28,5 +28,10 @@ namespace KitBoxAPP
         {
 
         }
+
+        private void button_home1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

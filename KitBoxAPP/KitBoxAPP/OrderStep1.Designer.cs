@@ -47,11 +47,11 @@
             this.label_a_client = new System.Windows.Forms.Label();
             this.label_dp = new System.Windows.Forms.Label();
             this.label_name = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.text_box_mail = new System.Windows.Forms.TextBox();
+            this.text_box_phone = new System.Windows.Forms.TextBox();
+            this.text_box_delivery = new System.Windows.Forms.TextBox();
+            this.text_box_name = new System.Windows.Forms.TextBox();
+            this.text_box_firstname = new System.Windows.Forms.TextBox();
             this.checkBox_yes1 = new System.Windows.Forms.CheckBox();
             this.checkBox_no1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
@@ -77,6 +77,7 @@
             this.button_home1.TabIndex = 7;
             this.button_home1.Text = "Menu principal";
             this.button_home1.UseVisualStyleBackColor = true;
+            this.button_home1.Click += new System.EventHandler(this.button_home1_Click);
             // 
             // label_Welcome1
             // 
@@ -260,60 +261,60 @@
             this.label_name.TabIndex = 26;
             this.label_name.Text = "Votre nom :";
             // 
-            // textBox2
+            // text_box_mail
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(440, 278);
-            this.textBox2.MaximumSize = new System.Drawing.Size(300, 30);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 30);
-            this.textBox2.TabIndex = 28;
+            this.text_box_mail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.text_box_mail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_box_mail.Location = new System.Drawing.Point(440, 278);
+            this.text_box_mail.MaximumSize = new System.Drawing.Size(300, 30);
+            this.text_box_mail.Multiline = true;
+            this.text_box_mail.Name = "text_box_mail";
+            this.text_box_mail.Size = new System.Drawing.Size(300, 30);
+            this.text_box_mail.TabIndex = 28;
             // 
-            // textBox3
+            // text_box_phone
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(440, 248);
-            this.textBox3.MaximumSize = new System.Drawing.Size(300, 30);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(300, 30);
-            this.textBox3.TabIndex = 29;
+            this.text_box_phone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.text_box_phone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_box_phone.Location = new System.Drawing.Point(440, 248);
+            this.text_box_phone.MaximumSize = new System.Drawing.Size(300, 30);
+            this.text_box_phone.Multiline = true;
+            this.text_box_phone.Name = "text_box_phone";
+            this.text_box_phone.Size = new System.Drawing.Size(300, 30);
+            this.text_box_phone.TabIndex = 29;
             // 
-            // textBox4
+            // text_box_delivery
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(440, 218);
-            this.textBox4.MaximumSize = new System.Drawing.Size(300, 30);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(300, 30);
-            this.textBox4.TabIndex = 30;
+            this.text_box_delivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.text_box_delivery.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_box_delivery.Location = new System.Drawing.Point(440, 218);
+            this.text_box_delivery.MaximumSize = new System.Drawing.Size(300, 30);
+            this.text_box_delivery.Multiline = true;
+            this.text_box_delivery.Name = "text_box_delivery";
+            this.text_box_delivery.Size = new System.Drawing.Size(300, 30);
+            this.text_box_delivery.TabIndex = 30;
             // 
-            // textBox5
+            // text_box_name
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(440, 158);
-            this.textBox5.MaximumSize = new System.Drawing.Size(300, 30);
-            this.textBox5.MinimumSize = new System.Drawing.Size(300, 30);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(300, 30);
-            this.textBox5.TabIndex = 31;
+            this.text_box_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.text_box_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_box_name.Location = new System.Drawing.Point(440, 158);
+            this.text_box_name.MaximumSize = new System.Drawing.Size(300, 30);
+            this.text_box_name.MinimumSize = new System.Drawing.Size(300, 30);
+            this.text_box_name.Multiline = true;
+            this.text_box_name.Name = "text_box_name";
+            this.text_box_name.Size = new System.Drawing.Size(300, 30);
+            this.text_box_name.TabIndex = 31;
             // 
-            // textBox6
+            // text_box_firstname
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(440, 188);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(300, 30);
-            this.textBox6.TabIndex = 32;
+            this.text_box_firstname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.text_box_firstname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_box_firstname.Location = new System.Drawing.Point(440, 188);
+            this.text_box_firstname.Multiline = true;
+            this.text_box_firstname.Name = "text_box_firstname";
+            this.text_box_firstname.Size = new System.Drawing.Size(300, 30);
+            this.text_box_firstname.TabIndex = 32;
             // 
             // checkBox_yes1
             // 
@@ -346,11 +347,11 @@
             this.ClientSize = new System.Drawing.Size(884, 521);
             this.Controls.Add(this.checkBox_no1);
             this.Controls.Add(this.checkBox_yes1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.text_box_firstname);
+            this.Controls.Add(this.text_box_name);
+            this.Controls.Add(this.text_box_delivery);
+            this.Controls.Add(this.text_box_phone);
+            this.Controls.Add(this.text_box_mail);
             this.Controls.Add(this.label_name);
             this.Controls.Add(this.label_dp);
             this.Controls.Add(this.label_a_client);
@@ -399,11 +400,11 @@
         private System.Windows.Forms.Label label_a_client;
         private System.Windows.Forms.Label label_dp;
         private System.Windows.Forms.Label label_name;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox text_box_mail;
+        private System.Windows.Forms.TextBox text_box_phone;
+        private System.Windows.Forms.TextBox text_box_delivery;
+        private System.Windows.Forms.TextBox text_box_name;
+        private System.Windows.Forms.TextBox text_box_firstname;
         private System.Windows.Forms.CheckBox checkBox_yes1;
         private System.Windows.Forms.CheckBox checkBox_no1;
     }
