@@ -29,10 +29,14 @@ namespace KitBoxAPP
             //Application.Run(new OrderStep8());
             //Application.Run(new OrderStep9());
             //Application.Run(new Home_staff());
+            //Application.Run(new OrdersToAchieveStep1());
             //Application.Run(new OrdersToAchieveStep2());
             //Application.Run(new StockManagementStep1());
             //Application.Run(new StockManagementStep2());
             //Application.Run(new StockManagementStep3());
+            //Application.Run(new StockManagementStep4());
+            //Application.Run(new HistoryOrdersStep1());
+            //Application.Run(new HistoryOrdersStep2());
         }
 
         /// <summary>

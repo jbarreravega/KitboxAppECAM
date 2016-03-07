@@ -87,6 +87,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Color.cs" />
+    <Compile Include="HistoryOrdersStep1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryOrdersStep1.Designer.cs">
+      <DependentUpon>HistoryOrdersStep1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryOrdersStep2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryOrdersStep2.Designer.cs">
+      <DependentUpon>HistoryOrdersStep2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home_client.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,7 +199,19 @@
     <Compile Include="StockManagementStep3.Designer.cs">
       <DependentUpon>StockManagementStep3.cs</DependentUpon>
     </Compile>
+    <Compile Include="StockManagementStep4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockManagementStep4.Designer.cs">
+      <DependentUpon>StockManagementStep4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Supplier.cs" />
+    <EmbeddedResource Include="HistoryOrdersStep1.resx">
+      <DependentUpon>HistoryOrdersStep1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryOrdersStep2.resx">
+      <DependentUpon>HistoryOrdersStep2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home_client.resx">
       <DependentUpon>Home_client.cs</DependentUpon>
     </EmbeddedResource>
@@ -244,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StockManagementStep3.resx">
       <DependentUpon>StockManagementStep3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManagementStep4.resx">
+      <DependentUpon>StockManagementStep4.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

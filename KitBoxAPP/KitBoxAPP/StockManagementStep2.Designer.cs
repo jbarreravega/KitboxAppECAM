@@ -40,7 +40,7 @@
             this.label_amount20 = new System.Windows.Forms.Label();
             this.label_colorPiece21 = new System.Windows.Forms.Label();
             this.label_amount21 = new System.Windows.Forms.Label();
-            this.label_Welcome112 = new System.Windows.Forms.Label();
+            this.label_Welcome111 = new System.Windows.Forms.Label();
             this.button_home111 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -174,16 +174,16 @@
             this.label_amount21.Text = "100";
             this.label_amount21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label_Welcome112
+            // label_Welcome111
             // 
-            this.label_Welcome112.AutoSize = true;
-            this.label_Welcome112.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label_Welcome112.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label_Welcome112.Location = new System.Drawing.Point(173, 41);
-            this.label_Welcome112.Name = "label_Welcome112";
-            this.label_Welcome112.Size = new System.Drawing.Size(544, 55);
-            this.label_Welcome112.TabIndex = 207;
-            this.label_Welcome112.Text = "Bienvenue chez KitBox !";
+            this.label_Welcome111.AutoSize = true;
+            this.label_Welcome111.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.label_Welcome111.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label_Welcome111.Location = new System.Drawing.Point(173, 41);
+            this.label_Welcome111.Name = "label_Welcome111";
+            this.label_Welcome111.Size = new System.Drawing.Size(544, 55);
+            this.label_Welcome111.TabIndex = 207;
+            this.label_Welcome111.Text = "Bienvenue chez KitBox !";
             // 
             // button_home111
             // 
@@ -215,7 +215,7 @@
             this.Controls.Add(this.label_amount20);
             this.Controls.Add(this.label_colorPiece21);
             this.Controls.Add(this.label_amount21);
-            this.Controls.Add(this.label_Welcome112);
+            this.Controls.Add(this.label_Welcome111);
             this.Controls.Add(this.button_home111);
             this.Name = "StockManagementStep2";
             this.Text = "StockManagementStep2";
@@ -238,7 +238,7 @@
         private System.Windows.Forms.Label label_amount20;
         private System.Windows.Forms.Label label_colorPiece21;
         private System.Windows.Forms.Label label_amount21;
-        private System.Windows.Forms.Label label_Welcome112;
+        private System.Windows.Forms.Label label_Welcome111;
         private System.Windows.Forms.Button button_home111;
     }
 }
