@@ -7,6 +7,7 @@ namespace KitBoxAPP
 	{
 		private string name_client;
 		private string address_client;
+        private DateTime order_time, delivery_time;
 
 		public OrderClient () : base ()
 		{
@@ -15,10 +16,12 @@ namespace KitBoxAPP
 		}
 
 		public OrderClient (string name_client, string address_client,
-		                    List<Piece> pieces) : base (pieces)
+		                    List<Piece> pieces, DateTime order_time) 
+                            : base (pieces)
 		{
 			this.name_client = name_client;
 			this.address_client = address_client;
+            this.order_time = order_time;
 		}
 
 		public override double Price ()
@@ -40,6 +43,16 @@ namespace KitBoxAPP
 			get { return address_client; }
 			set { address_client = value; }
 		}
+
+        public DateTime OrderTime
+        {
+            get { return order_time; }
+        }
+
+        public DateTime DeliveryTime
+        {
+            get { return delivery_time; }
+        }
 	}
 }
 

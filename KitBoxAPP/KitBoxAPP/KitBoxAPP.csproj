@@ -99,6 +99,7 @@
     <Compile Include="Home_staff.Designer.cs">
       <DependentUpon>Home_staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderClientManager.cs" />
     <Compile Include="OrderStep1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +166,7 @@
     <Compile Include="OrdersToAchieveStep2.Designer.cs">
       <DependentUpon>OrdersToAchieveStep2.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderSupplierManager.cs" />
     <Compile Include="Piece.cs" />
     <Compile Include="PriceSupplier.cs" />
     <Compile Include="Program.cs" />
