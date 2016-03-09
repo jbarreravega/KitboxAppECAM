@@ -28,14 +28,14 @@ namespace KitBoxAPP
             optionForm.Show();
         }
 
-        /*private void button_staff_Click(object sender, EventArgs e)
+        private void button_staff_Click(object sender, EventArgs e)
         {
-                ToGoToHomeStaff optionForm = new ToGoToHomeStaff();
+               /* ToGoToHomeStaff optionForm = new ToGoToHomeStaff();
 
                 this.Hide();
 
-                optionForm.Show();
+                optionForm.Show();*/
             
-        }*/
+        }
     }
 }
