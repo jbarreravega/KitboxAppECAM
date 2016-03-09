@@ -77,7 +77,6 @@
             this.label_quotation.TabIndex = 202;
             this.label_quotation.Text = "Devis :";
             this.label_quotation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_quotation.Click += new System.EventHandler(this.label_quotation_Click);
             // 
             // label_step99
             // 
@@ -100,6 +99,7 @@
             this.label_step98.TabIndex = 200;
             this.label_step98.Text = "Etape 8";
             this.label_step98.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step98.Click += new System.EventHandler(this.label_step98_Click);
             // 
             // label_step97
             // 
@@ -111,6 +111,7 @@
             this.label_step97.TabIndex = 199;
             this.label_step97.Text = "Etape 7";
             this.label_step97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step97.Click += new System.EventHandler(this.label_step97_Click);
             // 
             // label_step96
             // 
@@ -122,6 +123,7 @@
             this.label_step96.TabIndex = 198;
             this.label_step96.Text = "Etape 6";
             this.label_step96.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step96.Click += new System.EventHandler(this.label_step96_Click);
             // 
             // label_step95
             // 
@@ -133,6 +135,7 @@
             this.label_step95.TabIndex = 197;
             this.label_step95.Text = "Etape 5";
             this.label_step95.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step95.Click += new System.EventHandler(this.label_step95_Click);
             // 
             // label_step94
             // 
@@ -144,6 +147,7 @@
             this.label_step94.TabIndex = 196;
             this.label_step94.Text = "Etape 4";
             this.label_step94.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step94.Click += new System.EventHandler(this.label_step94_Click);
             // 
             // label_step93
             // 
@@ -155,6 +159,7 @@
             this.label_step93.TabIndex = 195;
             this.label_step93.Text = "Etape 3";
             this.label_step93.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step93.Click += new System.EventHandler(this.label_step93_Click);
             // 
             // label_step92
             // 
@@ -166,6 +171,7 @@
             this.label_step92.TabIndex = 194;
             this.label_step92.Text = "Etape 2";
             this.label_step92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step92.Click += new System.EventHandler(this.label_step92_Click);
             // 
             // label_step91
             // 
@@ -177,6 +183,7 @@
             this.label_step91.TabIndex = 193;
             this.label_step91.Text = "Etape 1";
             this.label_step91.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step91.Click += new System.EventHandler(this.label_step91_Click);
             // 
             // button_yes9
             // 
@@ -198,6 +205,7 @@
             this.button_home9.TabIndex = 190;
             this.button_home9.Text = "Menu principal";
             this.button_home9.UseVisualStyleBackColor = true;
+            this.button_home9.Click += new System.EventHandler(this.button_home9_Click);
             // 
             // label_Welcome9
             // 

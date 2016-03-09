@@ -20,5 +20,12 @@ namespace KitBoxAPP
             button_catalog.BackColor = System.Drawing.Color.LightBlue;
             button_order.BackColor = System.Drawing.Color.LightBlue;
         }
+
+        private void button_order_Click(object sender, EventArgs e)
+        {
+            OrderStep1 optionForm = new OrderStep1();
+            this.Hide();
+            optionForm.Show();
+        }
     }
 }

@@ -183,6 +183,7 @@
             this.button_previous3.TabIndex = 88;
             this.button_previous3.Text = "Précédent";
             this.button_previous3.UseVisualStyleBackColor = true;
+            this.button_previous3.Click += new System.EventHandler(this.button_previous3_Click);
             // 
             // label_corner
             // 
@@ -293,6 +294,7 @@
             this.label_step31.TabIndex = 78;
             this.label_step31.Text = "Etape 1";
             this.label_step31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step31.Click += new System.EventHandler(this.label_step31_Click);
             // 
             // button_next3
             // 
@@ -303,6 +305,7 @@
             this.button_next3.TabIndex = 76;
             this.button_next3.Text = "Suivant";
             this.button_next3.UseVisualStyleBackColor = true;
+            this.button_next3.Click += new System.EventHandler(this.button_next3_Click);
             // 
             // button_home3
             // 
@@ -314,6 +317,7 @@
             this.button_home3.TabIndex = 75;
             this.button_home3.Text = "Menu principal";
             this.button_home3.UseVisualStyleBackColor = true;
+            this.button_home3.Click += new System.EventHandler(this.button_home3_Click);
             // 
             // label_Welcome3
             // 

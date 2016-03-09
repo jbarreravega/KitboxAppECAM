@@ -173,6 +173,7 @@
             this.button_next2.TabIndex = 37;
             this.button_next2.Text = "Suivant";
             this.button_next2.UseVisualStyleBackColor = true;
+            this.button_next2.Click += new System.EventHandler(this.button_next2_Click);
             // 
             // button_home2
             // 
@@ -184,6 +185,7 @@
             this.button_home2.TabIndex = 36;
             this.button_home2.Text = "Menu principal";
             this.button_home2.UseVisualStyleBackColor = true;
+            this.button_home2.Click += new System.EventHandler(this.button_home2_Click);
             // 
             // label_Welcome2
             // 
@@ -205,6 +207,7 @@
             this.button_previous2.TabIndex = 63;
             this.button_previous2.Text = "Précédent";
             this.button_previous2.UseVisualStyleBackColor = true;
+            this.button_previous2.Click += new System.EventHandler(this.button_previous2_Click);
             // 
             // checkBox_area1
             // 

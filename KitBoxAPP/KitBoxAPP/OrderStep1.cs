@@ -29,9 +29,18 @@ namespace KitBoxAPP
 
         }
 
-        private void button_home1_Click(object sender, EventArgs e)
+        private void button_next1_Click(object sender, EventArgs e)
         {
+            OrderStep2 optionForm = new OrderStep2();
+            this.Hide();
+            optionForm.Show();
+        }
 
+        public void button_home1_Click(object sender, EventArgs e)
+        {
+            Home_client optionForm = new Home_client();
+            this.Hide();
+            optionForm.Show();
         }
     }
 }

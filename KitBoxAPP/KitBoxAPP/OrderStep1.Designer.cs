@@ -65,6 +65,7 @@
             this.button_next1.TabIndex = 9;
             this.button_next1.Text = "Suivant";
             this.button_next1.UseVisualStyleBackColor = true;
+            this.button_next1.Click += new System.EventHandler(this.button_next1_Click);
             // 
             // button_home1
             // 
