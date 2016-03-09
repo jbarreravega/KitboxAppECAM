@@ -57,6 +57,22 @@ namespace KitBoxAPP
 				return db;
 			}
 		}
+
+        public virtual List<double> Listarea()
+        {
+            double area = 0;
+            string sql = "";
+            List<double> listarea = new List<double>();
+            SQLiteCommand command = new SQLiteCommand(sql);
+            sql = "SELECT depth AND width FROM Stock WHERE name='Panneau HB'";
+            SQLiteDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                area = Convert.ToDouble("depth") * Convert.ToDouble("width");
+                listarea.Add(area);
+            } 
+            return listarea ;
+        }
 	}
 }
 
