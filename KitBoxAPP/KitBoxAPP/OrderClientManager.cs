@@ -8,6 +8,7 @@ using System.Data.SQLite;
 namespace KitBoxAPP
 {
     class OrderClientManager
+                    List<Order> order_list;
     {
         private SQLiteConnection db;
 
@@ -50,7 +51,7 @@ namespace KitBoxAPP
         public List<Order> List(Status status)
         {
             SQLiteCommand cmd;
-            List<Order> order_list;
+
 
             string sql = "SELECT " +
                 "code, " +
