@@ -5,12 +5,12 @@ namespace KitBoxAPP
     partial class OrderStep2
     {
         //private StockManager stock;
-        private DBManager surfDB = new DBManager("Stock");
+        //private DBManager surfDB = new DBManager("Stock");
+        //private StockManager area = new StockManager("");
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private surf = new list<DBManager>();
             
         /// <summary>
         /// Clean up any resources being used.
@@ -214,10 +214,14 @@ namespace KitBoxAPP
             this.checkedListBox_area.Name = "checkedListBox_area";
             this.checkedListBox_area.Size = new System.Drawing.Size(257, 196);
             this.checkedListBox_area.TabIndex = 74;
+            /*Piece stuck = new Piece;
+            foreach Piece
+                Piece.Code.StartsWith("PAH");
+                StockManager.Get(stuck.Code);*/
 
-            BindingList<Binder>(listarea) a = new BindingList<Binder>;
-            this.checkedListBox_area.Items.Add("Un peu de blabla.");
-           
+            //BindingList<Binder>(listarea) a = new BindingList<Binder>;
+            //this.checkedListBox_area.Items.Add(getWidth + "x" + getdepth + "cm");
+
             // 
             // OrderStep2
             // 

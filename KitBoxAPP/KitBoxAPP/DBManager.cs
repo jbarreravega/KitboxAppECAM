@@ -58,7 +58,7 @@ namespace KitBoxAPP
 			}
 		}
 
-        public virtual List<double> Listarea()
+        /*public virtual List<double> Listarea()
         {
             double area = 0;
             string sql = "";
@@ -72,7 +72,7 @@ namespace KitBoxAPP
                 listarea.Add(area);
             } 
             return listarea ;
-        }
+        }*/
 	}
 }
 
