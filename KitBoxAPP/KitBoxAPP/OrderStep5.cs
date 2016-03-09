@@ -19,5 +19,47 @@ namespace KitBoxAPP
 			button_next5.BackColor = System.Drawing.Color.LightBlue;
 			button_previous5.BackColor = System.Drawing.Color.LightBlue;
         }
+
+        private void label_step51_Click(object sender, EventArgs e)
+        {
+            OrderStep1 optionForm = new OrderStep1();
+            this.Hide();
+            optionForm.Show();
+        }
+
+        private void label_step52_Click(object sender, EventArgs e)
+        {
+            OrderStep2 optionForm = new OrderStep2();
+            this.Hide();
+            optionForm.Show();
+        }
+
+        private void label_step53_Click(object sender, EventArgs e)
+        {
+            OrderStep3 optionForm = new OrderStep3();
+            this.Hide();
+            optionForm.Show();
+        }
+
+        private void button_previous5_Click(object sender, EventArgs e)
+        {
+            OrderStep4 optionForm = new OrderStep4();
+            this.Hide();
+            optionForm.Show();
+        }
+
+        private void button_next5_Click(object sender, EventArgs e)
+        {
+            OrderStep6 optionForm = new OrderStep6();
+            this.Hide();
+            optionForm.Show();
+        }
+
+        private void button_home5_Click(object sender, EventArgs e)
+        {
+            Home_client optionForm = new Home_client();
+            this.Hide();
+            optionForm.Show();
+        }
     }
 }

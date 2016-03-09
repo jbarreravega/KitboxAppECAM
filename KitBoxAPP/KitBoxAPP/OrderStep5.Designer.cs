@@ -184,6 +184,7 @@
             this.button_previous5.TabIndex = 138;
             this.button_previous5.Text = "Précédent";
             this.button_previous5.UseVisualStyleBackColor = true;
+            this.button_previous5.Click += new System.EventHandler(this.button_previous5_Click);
             // 
             // label_height
             // 
@@ -272,6 +273,7 @@
             this.label_step53.TabIndex = 130;
             this.label_step53.Text = "Etape 3";
             this.label_step53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step53.Click += new System.EventHandler(this.label_step53_Click);
             // 
             // label_step52
             // 
@@ -283,6 +285,7 @@
             this.label_step52.TabIndex = 129;
             this.label_step52.Text = "Etape 2";
             this.label_step52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step52.Click += new System.EventHandler(this.label_step52_Click);
             // 
             // label_step51
             // 
@@ -294,6 +297,7 @@
             this.label_step51.TabIndex = 128;
             this.label_step51.Text = "Etape 1";
             this.label_step51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step51.Click += new System.EventHandler(this.label_step51_Click);
             // 
             // button_next5
             // 
@@ -304,6 +308,7 @@
             this.button_next5.TabIndex = 126;
             this.button_next5.Text = "Suivant";
             this.button_next5.UseVisualStyleBackColor = true;
+            this.button_next5.Click += new System.EventHandler(this.button_next5_Click);
             // 
             // button_home5
             // 
@@ -315,6 +320,7 @@
             this.button_home5.TabIndex = 125;
             this.button_home5.Text = "Menu principal";
             this.button_home5.UseVisualStyleBackColor = true;
+            this.button_home5.Click += new System.EventHandler(this.button_home5_Click);
             // 
             // label_Welcome5
             // 

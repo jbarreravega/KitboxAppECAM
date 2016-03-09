@@ -64,7 +64,6 @@
             this.checkBox_doors4.TabIndex = 167;
             this.checkBox_doors4.Text = "Pas de porte";
             this.checkBox_doors4.UseVisualStyleBackColor = false;
-            this.checkBox_doors4.CheckedChanged += new System.EventHandler(this.checkBox_doors4_CheckedChanged);
             // 
             // checkBox_doors3
             // 
@@ -112,6 +111,7 @@
             this.button_previous7.TabIndex = 163;
             this.button_previous7.Text = "Précédent";
             this.button_previous7.UseVisualStyleBackColor = true;
+            this.button_previous7.Click += new System.EventHandler(this.button_previous7_Click);
             // 
             // label_doors
             // 
@@ -178,6 +178,7 @@
             this.label_step75.TabIndex = 157;
             this.label_step75.Text = "Etape 5";
             this.label_step75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step75.Click += new System.EventHandler(this.label_step75_Click);
             // 
             // label_step74
             // 
@@ -189,6 +190,7 @@
             this.label_step74.TabIndex = 156;
             this.label_step74.Text = "Etape 4";
             this.label_step74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step74.Click += new System.EventHandler(this.label_step74_Click);
             // 
             // label_step73
             // 
@@ -200,6 +202,7 @@
             this.label_step73.TabIndex = 155;
             this.label_step73.Text = "Etape 3";
             this.label_step73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step73.Click += new System.EventHandler(this.label_step73_Click);
             // 
             // label_step72
             // 
@@ -211,6 +214,7 @@
             this.label_step72.TabIndex = 154;
             this.label_step72.Text = "Etape 2";
             this.label_step72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step72.Click += new System.EventHandler(this.label_step72_Click);
             // 
             // label_step71
             // 
@@ -222,6 +226,7 @@
             this.label_step71.TabIndex = 153;
             this.label_step71.Text = "Etape 1";
             this.label_step71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step71.Click += new System.EventHandler(this.label_step71_Click);
             // 
             // button_next7
             // 
@@ -232,6 +237,7 @@
             this.button_next7.TabIndex = 151;
             this.button_next7.Text = "Suivant";
             this.button_next7.UseVisualStyleBackColor = true;
+            this.button_next7.Click += new System.EventHandler(this.button_next7_Click);
             // 
             // button_home7
             // 
@@ -243,6 +249,7 @@
             this.button_home7.TabIndex = 150;
             this.button_home7.Text = "Menu principal";
             this.button_home7.UseVisualStyleBackColor = true;
+            this.button_home7.Click += new System.EventHandler(this.button_home7_Click);
             // 
             // label_Welcome7
             // 

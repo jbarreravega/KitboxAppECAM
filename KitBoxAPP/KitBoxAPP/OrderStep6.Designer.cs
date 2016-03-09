@@ -193,6 +193,7 @@
             this.button_previous6.TabIndex = 138;
             this.button_previous6.Text = "Précédent";
             this.button_previous6.UseVisualStyleBackColor = true;
+            this.button_previous6.Click += new System.EventHandler(this.button_previous6_Click);
             // 
             // label_colorCabinet
             // 
@@ -270,6 +271,7 @@
             this.label_step64.TabIndex = 131;
             this.label_step64.Text = "Etape 4";
             this.label_step64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step64.Click += new System.EventHandler(this.label_step64_Click);
             // 
             // label_step63
             // 
@@ -281,6 +283,7 @@
             this.label_step63.TabIndex = 130;
             this.label_step63.Text = "Etape 3";
             this.label_step63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step63.Click += new System.EventHandler(this.label_step63_Click);
             // 
             // label_step62
             // 
@@ -292,6 +295,7 @@
             this.label_step62.TabIndex = 129;
             this.label_step62.Text = "Etape 2";
             this.label_step62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step62.Click += new System.EventHandler(this.label_step62_Click);
             // 
             // label_step61
             // 
@@ -303,6 +307,7 @@
             this.label_step61.TabIndex = 128;
             this.label_step61.Text = "Etape 1";
             this.label_step61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step61.Click += new System.EventHandler(this.label_step61_Click);
             // 
             // button_next6
             // 
@@ -313,6 +318,7 @@
             this.button_next6.TabIndex = 126;
             this.button_next6.Text = "Suivant";
             this.button_next6.UseVisualStyleBackColor = true;
+            this.button_next6.Click += new System.EventHandler(this.button_next6_Click);
             // 
             // button_home6
             // 
@@ -324,6 +330,7 @@
             this.button_home6.TabIndex = 125;
             this.button_home6.Text = "Menu principal";
             this.button_home6.UseVisualStyleBackColor = true;
+            this.button_home6.Click += new System.EventHandler(this.button_home6_Click);
             // 
             // label_Welcome6
             // 

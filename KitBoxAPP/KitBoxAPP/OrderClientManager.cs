@@ -48,7 +48,7 @@ namespace KitBoxAPP
             return success;
         }
 
-        public List<Order> List(Status status)
+        /*public List<Order> List(Status status)
         {
             SQLiteCommand cmd;
 
@@ -67,7 +67,7 @@ namespace KitBoxAPP
             cmd = new SQLiteCommand(sql, db);
 
             return order_list;
-        }
+        }*/
 
         public bool Valid(Order order)
         {

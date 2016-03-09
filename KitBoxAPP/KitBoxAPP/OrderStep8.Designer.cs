@@ -99,6 +99,7 @@
             this.label_step87.TabIndex = 183;
             this.label_step87.Text = "Etape 7";
             this.label_step87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step87.Click += new System.EventHandler(this.label_step87_Click);
             // 
             // label_step86
             // 
@@ -110,6 +111,7 @@
             this.label_step86.TabIndex = 182;
             this.label_step86.Text = "Etape 6";
             this.label_step86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step86.Click += new System.EventHandler(this.label_step86_Click);
             // 
             // label_step85
             // 
@@ -121,6 +123,7 @@
             this.label_step85.TabIndex = 181;
             this.label_step85.Text = "Etape 5";
             this.label_step85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step85.Click += new System.EventHandler(this.label_step85_Click);
             // 
             // label_step84
             // 
@@ -132,6 +135,7 @@
             this.label_step84.TabIndex = 180;
             this.label_step84.Text = "Etape 4";
             this.label_step84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step84.Click += new System.EventHandler(this.label_step84_Click);
             // 
             // label_step83
             // 
@@ -143,6 +147,7 @@
             this.label_step83.TabIndex = 179;
             this.label_step83.Text = "Etape 3";
             this.label_step83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step83.Click += new System.EventHandler(this.label_step83_Click);
             // 
             // label_step82
             // 
@@ -154,6 +159,7 @@
             this.label_step82.TabIndex = 178;
             this.label_step82.Text = "Etape 2";
             this.label_step82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step82.Click += new System.EventHandler(this.label_step82_Click);
             // 
             // label_step81
             // 
@@ -165,6 +171,7 @@
             this.label_step81.TabIndex = 177;
             this.label_step81.Text = "Etape 1";
             this.label_step81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_step81.Click += new System.EventHandler(this.label_step81_Click);
             // 
             // button_yes8
             // 
@@ -186,6 +193,7 @@
             this.button_home8.TabIndex = 174;
             this.button_home8.Text = "Menu principal";
             this.button_home8.UseVisualStyleBackColor = true;
+            this.button_home8.Click += new System.EventHandler(this.button_home8_Click);
             // 
             // label_Welcome8
             // 

@@ -85,6 +85,7 @@
             this.button_order.TabIndex = 4;
             this.button_order.Text = "Passer une commande";
             this.button_order.UseVisualStyleBackColor = true;
+            this.button_order.Click += new System.EventHandler(this.button_order_Click);
             // 
             // Home_client
             // 
