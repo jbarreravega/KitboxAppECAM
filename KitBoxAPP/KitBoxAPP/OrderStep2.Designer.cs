@@ -214,6 +214,7 @@ namespace KitBoxAPP
             this.checkedListBox_area.Name = "checkedListBox_area";
             this.checkedListBox_area.Size = new System.Drawing.Size(257, 196);
             this.checkedListBox_area.TabIndex = 74;
+
             BindingList<Binder>(listarea) a = new BindingList<Binder>;
             this.checkedListBox_area.Items.Add("Un peu de blabla.");
            
