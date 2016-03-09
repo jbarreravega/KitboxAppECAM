@@ -96,6 +96,7 @@
             this.button_home101.TabIndex = 125;
             this.button_home101.Text = "Menu principal";
             this.button_home101.UseVisualStyleBackColor = true;
+            this.button_home101.Click += new System.EventHandler(this.button_home101_Click);
             // 
             // label_colorPiece1
             // 
@@ -217,7 +218,6 @@
             this.label_amount3.TabIndex = 148;
             this.label_amount3.Text = "2";
             this.label_amount3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_amount3.Click += new System.EventHandler(this.label_amount3_Click);
             // 
             // label1
             // 
@@ -257,7 +257,7 @@
             this.label_nameClient.AutoSize = true;
             this.label_nameClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.label_nameClient.ForeColor = System.Drawing.Color.White;
-            this.label_nameClient.Location = new System.Drawing.Point(224, 357);
+            this.label_nameClient.Location = new System.Drawing.Point(225, 356);
             this.label_nameClient.Name = "label_nameClient";
             this.label_nameClient.Size = new System.Drawing.Size(25, 22);
             this.label_nameClient.TabIndex = 154;
