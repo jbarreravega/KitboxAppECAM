@@ -27,5 +27,15 @@ namespace KitBoxAPP
             this.Hide();
             optionForm.Show();
         }
+
+        /*private void button_staff_Click(object sender, EventArgs e)
+        {
+                ToGoToHomeStaff optionForm = new ToGoToHomeStaff();
+
+                this.Hide();
+
+                optionForm.Show();
+            
+        }*/
     }
 }

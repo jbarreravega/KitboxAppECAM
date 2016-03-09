@@ -20,5 +20,41 @@ namespace KitBoxAPP
             button_deletePiece1.BackColor = System.Drawing.Color.LightBlue;
             button_addPiece1.BackColor = System.Drawing.Color.LightBlue;
         }
+
+        private void button_addPiece1_Click(object sender, EventArgs e)
+        {
+            StockManagementStep2 optionForm = new StockManagementStep2();
+
+            this.Hide();
+
+            optionForm.Show();
+        }
+
+        private void button_deletePiece1_Click(object sender, EventArgs e)
+        {
+            StockManagementStep3 optionForm = new StockManagementStep3();
+
+            this.Hide();
+
+            optionForm.Show();
+        }
+
+        private void button_changePiece1_Click(object sender, EventArgs e)
+        {
+            StockManagementStep4 optionForm = new StockManagementStep4();
+
+            this.Hide();
+
+            optionForm.Show();
+        }
+
+        private void button_home110_Click(object sender, EventArgs e)
+        {
+            Home_staff optionForm = new Home_staff();
+
+            this.Hide();
+
+            optionForm.Show();
+        }
     }
 }

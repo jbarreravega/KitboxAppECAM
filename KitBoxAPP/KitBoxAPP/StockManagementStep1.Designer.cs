@@ -65,6 +65,7 @@
             this.button_addPiece1.TabIndex = 216;
             this.button_addPiece1.Text = "Ajouter une pièce";
             this.button_addPiece1.UseVisualStyleBackColor = true;
+            this.button_addPiece1.Click += new System.EventHandler(this.button_addPiece1_Click);
             // 
             // button_deletePiece1
             // 
@@ -75,6 +76,7 @@
             this.button_deletePiece1.TabIndex = 215;
             this.button_deletePiece1.Text = "Supprimer la pièce";
             this.button_deletePiece1.UseVisualStyleBackColor = true;
+            this.button_deletePiece1.Click += new System.EventHandler(this.button_deletePiece1_Click);
             // 
             // checkBox_namePiece13
             // 
@@ -206,6 +208,7 @@
             this.button_changePiece1.TabIndex = 203;
             this.button_changePiece1.Text = "Modifier la pièce";
             this.button_changePiece1.UseVisualStyleBackColor = true;
+            this.button_changePiece1.Click += new System.EventHandler(this.button_changePiece1_Click);
             // 
             // label_colorPiece13
             // 
@@ -339,6 +342,7 @@
             this.button_home110.TabIndex = 191;
             this.button_home110.Text = "Menu principal";
             this.button_home110.UseVisualStyleBackColor = true;
+            this.button_home110.Click += new System.EventHandler(this.button_home110_Click);
             // 
             // StockManagementStep1
             // 

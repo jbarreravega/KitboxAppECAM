@@ -19,10 +19,5 @@ namespace KitBoxAPP
             button_yes40.BackColor = System.Drawing.Color.Green;
             button_no40.BackColor = System.Drawing.Color.Red;
         }
-
-        private void label_namePiece31_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

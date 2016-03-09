@@ -19,5 +19,28 @@ namespace KitBoxAPP
             button_yes29.BackColor = System.Drawing.Color.Green;
             button_no29.BackColor = System.Drawing.Color.Red;
         }
+
+        private void button_yes29_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("La pièce a été ajoutée au stock");
+        }
+
+        private void button_no29_Click(object sender, EventArgs e)
+        {
+            Home_staff optionForm = new Home_staff();
+
+            this.Hide();
+
+            optionForm.Show();
+        }
+
+        private void button_home111_Click(object sender, EventArgs e)
+        {
+            Home_staff optionForm = new Home_staff();
+
+            this.Hide();
+
+            optionForm.Show();
+        }
     }
 }

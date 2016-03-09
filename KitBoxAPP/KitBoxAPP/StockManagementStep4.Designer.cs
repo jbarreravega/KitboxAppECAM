@@ -73,7 +73,6 @@
             this.label_namePiece41.Size = new System.Drawing.Size(305, 30);
             this.label_namePiece41.TabIndex = 217;
             this.label_namePiece41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_namePiece41.Click += new System.EventHandler(this.label_namePiece31_Click);
             // 
             // label_provider81
             // 

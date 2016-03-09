@@ -65,6 +65,7 @@
             this.button_staff.TabIndex = 2;
             this.button_staff.Text = "Personnel";
             this.button_staff.UseVisualStyleBackColor = true;
+            this.button_staff.Click += new System.EventHandler(this.button_staff_Click);
             // 
             // button_catalog
             // 

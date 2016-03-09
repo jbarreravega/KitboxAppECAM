@@ -18,5 +18,23 @@ namespace KitBoxAPP
             button_home100.BackColor = System.Drawing.Color.DarkRed;
             button_detailsOfOrder.BackColor = System.Drawing.Color.LightBlue;
         }
+
+        private void button_home100_Click(object sender, EventArgs e)
+        {
+            Home_staff optionForm = new Home_staff();
+
+            this.Hide();
+
+            optionForm.Show();
+        }
+
+        private void button_detailsOfOrder_Click(object sender, EventArgs e)
+        {
+            OrdersToAchieveStep2 optionForm = new OrdersToAchieveStep2();
+
+            this.Hide();
+
+            optionForm.Show();
+        }
     }
 }

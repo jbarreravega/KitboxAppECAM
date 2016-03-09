@@ -208,6 +208,12 @@
       <DependentUpon>StockManagementStep4.cs</DependentUpon>
     </Compile>
     <Compile Include="Supplier.cs" />
+    <Compile Include="ToGoToHomeStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToGoToHomeStaff.Designer.cs">
+      <DependentUpon>ToGoToHomeStaff.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="HistoryOrdersStep1.resx">
       <DependentUpon>HistoryOrdersStep1.cs</DependentUpon>
     </EmbeddedResource>
@@ -273,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StockManagementStep4.resx">
       <DependentUpon>StockManagementStep4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToGoToHomeStaff.resx">
+      <DependentUpon>ToGoToHomeStaff.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

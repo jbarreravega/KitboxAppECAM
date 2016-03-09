@@ -47,6 +47,7 @@
             this.button_order0.TabIndex = 9;
             this.button_order0.Text = "Passer une commande";
             this.button_order0.UseVisualStyleBackColor = true;
+            this.button_order0.Click += new System.EventHandler(this.button_order0_Click);
             // 
             // button_catalog0
             // 
@@ -98,6 +99,7 @@
             this.button_orderToDo.TabIndex = 10;
             this.button_orderToDo.Text = "Commande à réaliser";
             this.button_orderToDo.UseVisualStyleBackColor = true;
+            this.button_orderToDo.Click += new System.EventHandler(this.button_orderToDo_Click);
             // 
             // button_stock
             // 
@@ -108,6 +110,7 @@
             this.button_stock.TabIndex = 12;
             this.button_stock.Text = "Gestion du stock";
             this.button_stock.UseVisualStyleBackColor = true;
+            this.button_stock.Click += new System.EventHandler(this.button_stock_Click);
             // 
             // button_history
             // 
@@ -118,6 +121,7 @@
             this.button_history.TabIndex = 13;
             this.button_history.Text = "Historique des commandes";
             this.button_history.UseVisualStyleBackColor = true;
+            this.button_history.Click += new System.EventHandler(this.button_history_Click);
             // 
             // Home_staff
             // 

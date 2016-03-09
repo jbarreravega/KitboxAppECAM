@@ -52,6 +52,7 @@
             this.button_home100.TabIndex = 8;
             this.button_home100.Text = "Menu principal";
             this.button_home100.UseVisualStyleBackColor = true;
+            this.button_home100.Click += new System.EventHandler(this.button_home100_Click);
             // 
             // label_Welcome100
             // 
@@ -165,6 +166,7 @@
             this.button_detailsOfOrder.TabIndex = 124;
             this.button_detailsOfOrder.Text = "Détail de la commande";
             this.button_detailsOfOrder.UseVisualStyleBackColor = true;
+            this.button_detailsOfOrder.Click += new System.EventHandler(this.button_detailsOfOrder_Click);
             // 
             // OrdersToAchieveStep1
             // 

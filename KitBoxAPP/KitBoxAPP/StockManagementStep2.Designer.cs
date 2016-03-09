@@ -53,6 +53,7 @@
             this.button_no29.TabIndex = 219;
             this.button_no29.Text = "Annuler";
             this.button_no29.UseVisualStyleBackColor = true;
+            this.button_no29.Click += new System.EventHandler(this.button_no29_Click);
             // 
             // button_yes29
             // 
@@ -63,6 +64,7 @@
             this.button_yes29.TabIndex = 218;
             this.button_yes29.Text = "Valider";
             this.button_yes29.UseVisualStyleBackColor = true;
+            this.button_yes29.Click += new System.EventHandler(this.button_yes29_Click);
             // 
             // label_namePiece21
             // 
@@ -196,6 +198,7 @@
             this.button_home111.TabIndex = 206;
             this.button_home111.Text = "Menu principal";
             this.button_home111.UseVisualStyleBackColor = true;
+            this.button_home111.Click += new System.EventHandler(this.button_home111_Click);
             // 
             // StockManagementStep2
             // 

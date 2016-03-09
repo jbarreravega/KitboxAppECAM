@@ -24,9 +24,15 @@ namespace KitBoxAPP
 
         }
 
-        private void label_amount3_Click(object sender, EventArgs e)
+        private void button_home101_Click(object sender, EventArgs e)
         {
+            Home_staff optionForm = new Home_staff();
 
+            this.Hide();
+
+            optionForm.Show();
         }
+
+        
     }
 }
