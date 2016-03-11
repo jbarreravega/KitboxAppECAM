@@ -28,12 +28,33 @@ namespace KitBoxAPP
 
         #region Windows Form Designer generated code
 
+
+        public List<Piece> Pannels()
+        {
+            mgr = new DBManager();
+            List<Piece> stucks = mgr.Stock.List();
+            List<Piece> pannels = new List<Piece>();
+            foreach (Piece stuck in stucks)
+            {
+                if (stuck.Code.StartsWith("PAH") == true)
+                {
+                    pannels.Add(stuck);
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            return pannels;
+        }
+
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
+
             this.label_area = new System.Windows.Forms.Label();
             this.label_step29 = new System.Windows.Forms.Label();
             this.label_step28 = new System.Windows.Forms.Label();
@@ -216,7 +237,19 @@ namespace KitBoxAPP
             this.checkedListBox_area.Size = new System.Drawing.Size(257, 196);
             this.checkedListBox_area.TabIndex = 74;
 
+            // this.checkedListBox_area.ItemCheck += new System.Windows.Forms.ItemChangedEventHandler(this.checkedListBox_area_ItemCheck);
 
+            List<Piece> pannels = Pannels();
+            foreach(Piece pc in pannels)
+            {
+                string larg= pc.Width.ToString ();
+                string prof = pc.Depth.ToString ();
+                string col = pc.Color.Name;
+                checkedListBox_area.Items.Add(larg + " x " + prof + " cm" + "     " + col);               
+            }
+            //checkedListBox tri = checkedListBox_area =  orderby ascending;
+
+            //return checkedListBox_area;
 
             // 
             // OrderStep2
@@ -244,27 +277,9 @@ namespace KitBoxAPP
             this.Text = "OrderStep2";
             this.ResumeLayout(false);
             this.PerformLayout();
+        
 
         }
-        public List<Piece> Panneaux()
-        {
-            mgr = new DBManager();
-            List<Piece> stucks = mgr.Stock.List();
-            List<Piece> pannels = new List<Piece>();
-            foreach (Piece stuck in stucks)
-            {
-                if (stuck.Code.StartsWith("PAH") == true)
-                {
-                    pannels.Add(stuck);
-                }
-                else
-                {
-                    continue;
-                }
-            }
-            return pannels;
-        }
-
         #endregion
         private System.Windows.Forms.Label label_area;
         private System.Windows.Forms.Label label_step29;
@@ -282,6 +297,5 @@ namespace KitBoxAPP
         private System.Windows.Forms.Button button_previous2;
         private System.Windows.Forms.CheckedListBox checkedListBox_area;
     }
-    //BindingList<Binder>(listarea) a = new BindingList<Binder>;
-    //this.checkedListBox_area.Items.Add(getWidth + " x " + getdepth + " cm");
+   
 }
