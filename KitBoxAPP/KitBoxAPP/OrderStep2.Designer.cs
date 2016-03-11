@@ -1,11 +1,12 @@
 ﻿//using System.Data.SQLite;
+using System.Collections.Generic;
 
 namespace KitBoxAPP
 {
     partial class OrderStep2
     {
         //private StockManager stock;
-        //private DBManager surfDB = new DBManager("Stock");
+        private DBManager mgr;
         //private StockManager area = new StockManager("");
         /// <summary>
         /// Required designer variable.
@@ -214,13 +215,8 @@ namespace KitBoxAPP
             this.checkedListBox_area.Name = "checkedListBox_area";
             this.checkedListBox_area.Size = new System.Drawing.Size(257, 196);
             this.checkedListBox_area.TabIndex = 74;
-            /*Piece stuck = new Piece;
-            foreach Piece
-                Piece.Code.StartsWith("PAH");
-                StockManager.Get(stuck.Code);*/
 
-            //BindingList<Binder>(listarea) a = new BindingList<Binder>;
-            //this.checkedListBox_area.Items.Add(getWidth + "x" + getdepth + "cm");
+
 
             // 
             // OrderStep2
@@ -250,6 +246,24 @@ namespace KitBoxAPP
             this.PerformLayout();
 
         }
+        public List<Piece> Panneaux()
+        {
+            mgr = new DBManager();
+            List<Piece> stucks = mgr.Stock.List();
+            List<Piece> pannels = new List<Piece>();
+            foreach (Piece stuck in stucks)
+            {
+                if (stuck.Code.StartsWith("PAH") == true)
+                {
+                    pannels.Add(stuck);
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            return pannels;
+        }
 
         #endregion
         private System.Windows.Forms.Label label_area;
@@ -268,4 +282,6 @@ namespace KitBoxAPP
         private System.Windows.Forms.Button button_previous2;
         private System.Windows.Forms.CheckedListBox checkedListBox_area;
     }
+    //BindingList<Binder>(listarea) a = new BindingList<Binder>;
+    //this.checkedListBox_area.Items.Add(getWidth + " x " + getdepth + " cm");
 }
