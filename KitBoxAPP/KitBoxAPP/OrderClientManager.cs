@@ -8,7 +8,6 @@ using System.Data.SQLite;
 namespace KitBoxAPP
 {
     class OrderClientManager
-                    List<Order> order_list;
     {
         private SQLiteConnection db;
 
