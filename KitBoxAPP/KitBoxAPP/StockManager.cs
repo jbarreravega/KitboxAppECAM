@@ -7,10 +7,12 @@ namespace KitBoxAPP
 	public class StockManager
 	{
 		private SQLiteConnection db;
+		private List<Piece> pieces;
 
 		public StockManager (SQLiteConnection db)
 		{
 			this.db = db;
+			pieces = List (); 
 		}
 
 		/// <summary>
@@ -333,6 +335,13 @@ namespace KitBoxAPP
 
 			return lt;
 		}
-	}
+
+		// Propoerties
+
+		public List<Piece> Pieces
+		{
+			get;
+			set;
+		}
 }
 
