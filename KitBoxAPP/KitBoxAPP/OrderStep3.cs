@@ -22,29 +22,26 @@ namespace KitBoxAPP
 
         private void label_step31_Click(object sender, EventArgs e)
         {
-            OrderStep1 optionForm = new OrderStep1();
-            this.Hide();
-            optionForm.Show();
+            this.DialogResult = DialogResult.OK;
         }
 
         private void button_previous3_Click(object sender, EventArgs e)
         {
-            OrderStep2 optionForm = new OrderStep2();
-            this.Hide();
-            optionForm.Show();
+            this.DialogResult = DialogResult.OK;
         }
 
         private void button_next3_Click(object sender, EventArgs e)
         {
-            OrderStep4 optionForm = new OrderStep4();
+            OrderStep4 Order4 = new OrderStep4();
             this.Hide();
-            optionForm.Show();
+            Order4.ShowDialog();
+            this.Show();
         }
 
         private void button_home3_Click(object sender, EventArgs e)
         {
             Home_client optionForm = new Home_client();
-            this.Hide();
+            this.Close();
             optionForm.Show();
         }
     }

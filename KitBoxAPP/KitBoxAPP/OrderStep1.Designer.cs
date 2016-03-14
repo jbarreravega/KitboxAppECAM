@@ -239,7 +239,6 @@
             this.label_a_client.Size = new System.Drawing.Size(300, 30);
             this.label_a_client.TabIndex = 24;
             this.label_a_client.Text = "Etes-vous déjà client ? ";
-            this.label_a_client.Click += new System.EventHandler(this.label5_Click);
             // 
             // label_dp
             // 
@@ -272,6 +271,7 @@
             this.text_box_mail.Name = "text_box_mail";
             this.text_box_mail.Size = new System.Drawing.Size(300, 30);
             this.text_box_mail.TabIndex = 28;
+            this.text_box_mail.TextChanged += new System.EventHandler(this.text_box_mail_TextChanged);
             // 
             // text_box_phone
             // 
@@ -283,6 +283,7 @@
             this.text_box_phone.Name = "text_box_phone";
             this.text_box_phone.Size = new System.Drawing.Size(300, 30);
             this.text_box_phone.TabIndex = 29;
+            this.text_box_phone.TextChanged += new System.EventHandler(this.text_box_phone_TextChanged);
             // 
             // text_box_delivery
             // 
@@ -294,9 +295,11 @@
             this.text_box_delivery.Name = "text_box_delivery";
             this.text_box_delivery.Size = new System.Drawing.Size(300, 30);
             this.text_box_delivery.TabIndex = 30;
+            this.text_box_delivery.TextChanged += new System.EventHandler(this.text_box_delivery_TextChanged);
             // 
             // text_box_name
             // 
+            this.text_box_name.AccessibleRole = System.Windows.Forms.AccessibleRole.Application;
             this.text_box_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.text_box_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_box_name.Location = new System.Drawing.Point(440, 158);
@@ -306,6 +309,7 @@
             this.text_box_name.Name = "text_box_name";
             this.text_box_name.Size = new System.Drawing.Size(300, 30);
             this.text_box_name.TabIndex = 31;
+            this.text_box_name.TextChanged += new System.EventHandler(this.text_box_name_TextChanged);
             // 
             // text_box_firstname
             // 
@@ -316,6 +320,7 @@
             this.text_box_firstname.Name = "text_box_firstname";
             this.text_box_firstname.Size = new System.Drawing.Size(300, 30);
             this.text_box_firstname.TabIndex = 32;
+            this.text_box_firstname.TextChanged += new System.EventHandler(this.text_box_firstname_TextChanged);
             // 
             // checkBox_yes1
             // 
@@ -328,6 +333,7 @@
             this.checkBox_yes1.TabIndex = 33;
             this.checkBox_yes1.Text = "OUI";
             this.checkBox_yes1.UseVisualStyleBackColor = false;
+            this.checkBox_yes1.CheckedChanged += new System.EventHandler(this.checkBox_yes1_CheckedChanged);
             // 
             // checkBox_no1
             // 
@@ -404,9 +410,9 @@
         private System.Windows.Forms.TextBox text_box_mail;
         private System.Windows.Forms.TextBox text_box_phone;
         private System.Windows.Forms.TextBox text_box_delivery;
-        private System.Windows.Forms.TextBox text_box_name;
         private System.Windows.Forms.TextBox text_box_firstname;
         private System.Windows.Forms.CheckBox checkBox_yes1;
         private System.Windows.Forms.CheckBox checkBox_no1;
+        public System.Windows.Forms.TextBox text_box_name;
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,10 +18,11 @@ namespace KitBoxAPP
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Home_client());
+            Application.Run(new Home_client());
+
             //Application.Run(new ToGoToHomeStaff());
             //Application.Run(new OrderStep1());
-            Application.Run(new OrderStep2());
+            //Application.Run(new OrderStep2());
             //Application.Run(new OrderStep3());
             //Application.Run(new OrderStep4());
             //Application.Run(new OrderStep5());

@@ -20,18 +20,17 @@ namespace KitBoxAPP
             button_previous2.BackColor = System.Drawing.Color.LightBlue;
         }
 
-        private void button_previous2_Click(object sender, EventArgs e)
+        public void button_previous2_Click(object sender, EventArgs e)
         {
-            OrderStep1 optionForm = new OrderStep1();
-            this.Hide();
-            optionForm.Show();
+            this.DialogResult = DialogResult.OK;
         }
 
         private void button_next2_Click(object sender, EventArgs e)
         {
-            OrderStep3 optionForm = new OrderStep3();
+            OrderStep3 Order3 = new OrderStep3();
             this.Hide();
-            optionForm.Show();
+            Order3.ShowDialog();
+            this.Show();
         }
 
         private void button_home2_Click(object sender, EventArgs e)

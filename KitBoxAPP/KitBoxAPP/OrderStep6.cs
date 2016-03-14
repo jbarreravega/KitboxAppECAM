@@ -50,16 +50,15 @@ namespace KitBoxAPP
 
         private void button_previous6_Click(object sender, EventArgs e)
         {
-            OrderStep5 optionForm = new OrderStep5();
-            this.Hide();
-            optionForm.Show();
+            this.DialogResult = DialogResult.OK;
         }
 
         private void button_next6_Click(object sender, EventArgs e)
         {
-            OrderStep7 optionForm = new OrderStep7();
+            OrderStep7 Order7 = new OrderStep7();
             this.Hide();
-            optionForm.Show();
+            Order7.ShowDialog();
+            this.Show();
         }
 
         private void button_home6_Click(object sender, EventArgs e)

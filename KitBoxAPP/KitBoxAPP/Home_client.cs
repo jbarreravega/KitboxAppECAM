@@ -23,9 +23,10 @@ namespace KitBoxAPP
 
         private void button_order_Click(object sender, EventArgs e)
         {
-            OrderStep1 optionForm = new OrderStep1();
+            OrderStep1 Order1 = new OrderStep1();
             this.Hide();
-            optionForm.Show();
+            Order1.ShowDialog();
+            this.Show();
         }
 
         private void button_staff_Click(object sender, EventArgs e)
