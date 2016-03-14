@@ -1,11 +1,12 @@
 ﻿//using System.Data.SQLite;
+using System.Collections.Generic;
 
 namespace KitBoxAPP
 {
     partial class OrderStep2
     {
         //private StockManager stock;
-        //private DBManager surfDB = new DBManager("Stock");
+        private DBManager mgr;
         //private StockManager area = new StockManager("");
         /// <summary>
         /// Required designer variable.
@@ -27,12 +28,33 @@ namespace KitBoxAPP
 
         #region Windows Form Designer generated code
 
+
+        public List<Piece> Pannels()
+        {
+            mgr = new DBManager();
+            List<Piece> stucks = mgr.Stock.List();
+            List<Piece> pannels = new List<Piece>();
+            foreach (Piece stuck in stucks)
+            {
+                if (stuck.Code.StartsWith("PAH") == true)
+                {
+                    pannels.Add(stuck);
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            return pannels;
+        }
+
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
+
             this.label_area = new System.Windows.Forms.Label();
             this.label_step29 = new System.Windows.Forms.Label();
             this.label_step28 = new System.Windows.Forms.Label();
@@ -214,13 +236,20 @@ namespace KitBoxAPP
             this.checkedListBox_area.Name = "checkedListBox_area";
             this.checkedListBox_area.Size = new System.Drawing.Size(257, 196);
             this.checkedListBox_area.TabIndex = 74;
-            /*Piece stuck = new Piece;
-            foreach Piece
-                Piece.Code.StartsWith("PAH");
-                StockManager.Get(stuck.Code);*/
 
-            //BindingList<Binder>(listarea) a = new BindingList<Binder>;
-            //this.checkedListBox_area.Items.Add(getWidth + "x" + getdepth + "cm");
+            // this.checkedListBox_area.ItemCheck += new System.Windows.Forms.ItemChangedEventHandler(this.checkedListBox_area_ItemCheck);
+
+            List<Piece> pannels = Pannels();
+            foreach(Piece pc in pannels)
+            {
+                string larg= pc.Width.ToString ();
+                string prof = pc.Depth.ToString ();
+                string col = pc.Color.Name;
+                checkedListBox_area.Items.Add(larg + " x " + prof + " cm" + "     " + col);               
+            }
+            //checkedListBox tri = checkedListBox_area =  orderby ascending;
+
+            //return checkedListBox_area;
 
             // 
             // OrderStep2
@@ -248,9 +277,9 @@ namespace KitBoxAPP
             this.Text = "OrderStep2";
             this.ResumeLayout(false);
             this.PerformLayout();
+        
 
         }
-
         #endregion
         private System.Windows.Forms.Label label_area;
         private System.Windows.Forms.Label label_step29;
@@ -268,4 +297,5 @@ namespace KitBoxAPP
         private System.Windows.Forms.Button button_previous2;
         private System.Windows.Forms.CheckedListBox checkedListBox_area;
     }
+   
 }

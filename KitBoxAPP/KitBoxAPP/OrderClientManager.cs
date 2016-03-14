@@ -8,9 +8,13 @@ using System.Data.SQLite;
 namespace KitBoxAPP
 {
     class OrderClientManager
+<<<<<<< HEAD
     { 
         List<Order> order_list;
         
+=======
+    {
+>>>>>>> 0a05893a61ec2ac8dede8332a107ff54d092a796
         private SQLiteConnection db;
 
         public OrderClientManager(SQLiteConnection db)
