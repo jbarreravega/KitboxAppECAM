@@ -137,10 +137,6 @@ namespace KitBoxAPP
             Console.WriteLine("Begin request : " + sql);
 
             cmd = new SQLiteCommand(sql, db);
-<<<<<<< HEAD
-            ;
-=======
->>>>>>> 0a05893a61ec2ac8dede8332a107ff54d092a796
 
             success = cmd.ExecuteNonQuery() > 0;
 
@@ -171,10 +167,6 @@ namespace KitBoxAPP
             Console.WriteLine("Begin request : " + sql);
 
             cmd = new SQLiteCommand(sql, db);
-<<<<<<< HEAD
-            ;
-=======
->>>>>>> 0a05893a61ec2ac8dede8332a107ff54d092a796
 
             success = cmd.ExecuteNonQuery() > 0;
 
@@ -218,10 +210,6 @@ namespace KitBoxAPP
 
             cmd = new SQLiteCommand(sql, db);
             rd = cmd.ExecuteReader();
-<<<<<<< HEAD
-            ;
-=======
->>>>>>> 0a05893a61ec2ac8dede8332a107ff54d092a796
 
             rd.Read();
             piece = CreateObject(rd);
@@ -264,10 +252,6 @@ namespace KitBoxAPP
 
             cmd = new SQLiteCommand(sql, db);
             rd = cmd.ExecuteReader();
-<<<<<<< HEAD
-            ;
-=======
->>>>>>> 0a05893a61ec2ac8dede8332a107ff54d092a796
 
             while (rd.Read())
             {
@@ -357,9 +341,4 @@ namespace KitBoxAPP
             set;
         }
     }
-<<<<<<< HEAD
-}   
-=======
 }
->>>>>>> 0a05893a61ec2ac8dede8332a107ff54d092a796
-
