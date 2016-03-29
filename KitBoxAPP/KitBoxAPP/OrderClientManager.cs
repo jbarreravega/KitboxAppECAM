@@ -10,6 +10,7 @@ namespace KitBoxAPP
     class OrderClientManager
     {
         private SQLiteConnection db;
+		private List<OrderClient> orders;
 
         public OrderClientManager(SQLiteConnection db)
         {

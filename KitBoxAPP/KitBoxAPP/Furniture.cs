@@ -19,7 +19,7 @@ namespace KitBoxAPP
 			corner_price_supplement = false;
 		}
 
-		public void findACorner(string color_name)
+		public void FindACorner(string color_name)
 		{
 			// Not implemented yet
 		}
