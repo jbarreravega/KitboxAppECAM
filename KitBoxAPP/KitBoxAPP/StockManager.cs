@@ -9,11 +9,27 @@ namespace KitBoxAPP
         private SQLiteConnection db;
         private List<Piece> pieces;
 
-        public StockManager(SQLiteConnection db)
-        {
-            this.db = db;
-            pieces = List();
-        }
+        public StockManager (SQLiteConnection db) : this (db, true) {}
+
+		public StockManager(SQLiteConnection db, bool create_list)
+		{
+			this.db = db;
+			if (create_list)
+			{
+				pieces = List ();
+			} else
+			{
+				pieces = new List<Piece> ();
+			}
+		}
+
+		/// <summary>
+		/// Reload the list of order from the database.
+		/// </summary>
+		public void Reload()
+		{
+			pieces = List ();
+		}
 
         /// <summary>
         /// Save the specified piece in the database.
@@ -65,7 +81,7 @@ namespace KitBoxAPP
         }
 
         /// <summary>
-        /// Add the specified piece to the database
+        /// Add the specified piece in the database
         /// </summary>
         /// <param name="piece">Piece.</param>
         private bool Add(Piece piece)
