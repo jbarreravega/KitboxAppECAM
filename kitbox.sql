@@ -7,7 +7,7 @@ CREATE TABLE "Color" (
     "name" VARCHAR(255) NOT NULL
 );
 
--- Fulfill the Color table
+-- Fill in the Color table
 INSERT INTO "Color" ("name")
 SELECT DISTINCT "Couleur"
 FROM "raw"
@@ -27,7 +27,7 @@ CREATE TABLE "Stock" (
     "code_color" INTEGER NOT NULL
 );
 
--- Fulfill the table Stock
+-- Fill in the table Stock
 INSERT INTO "Stock" (
     "code",
     "name",
@@ -59,7 +59,7 @@ CREATE TABLE "Supplier" (
     "address" TEXT NOT NULL
 );
 
--- Fulfill the Supplier table
+-- Fill in the Supplier table
 INSERT INTO "Supplier" (
     "name",
     "address"
@@ -79,7 +79,7 @@ CREATE TABLE "StockSupplier" (
     PRIMARY KEY ("code_stock", "code_supplier")
 );
 
--- Fulfill the table StockSupplier
+-- Fill in the table StockSupplier
 INSERT INTO "StockSupplier" (
     "code_stock",
     "code_supplier",
