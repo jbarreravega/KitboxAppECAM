@@ -9,8 +9,18 @@ namespace KitBoxAPP
         private SQLiteConnection db;
         private List<Piece> pieces;
 
+		/// <summary>
+		/// Initializes a new instance of the <see cref="KitBoxAPP.StockManager"/> class.
+		/// </summary>
+		/// <param name="db">The Db.</param>
         public StockManager (SQLiteConnection db) : this (db, true) {}
 
+		/// <summary>
+		/// Initializes a new instance of the <see cref="KitBoxAPP.StockManager"/> class.
+		/// </summary>
+		/// <param name="db">The Db.</param>
+		/// <param name="create_list">If set to <c>true</c> import all the pieces
+		/// from the database in a List attribute of this class.</param>
 		public StockManager(SQLiteConnection db, bool create_list)
 		{
 			this.db = db;
@@ -24,7 +34,7 @@ namespace KitBoxAPP
 		}
 
 		/// <summary>
-		/// Reload the list of order from the database.
+		/// Reload the list of pieces from the database.
 		/// </summary>
 		public void Reload()
 		{
@@ -34,7 +44,7 @@ namespace KitBoxAPP
         /// <summary>
         /// Save the specified piece in the database.
         /// </summary>
-        /// <param name="piece">Piece.</param>
+        /// <param name="piece">The Piece to store in database.</param>
         public bool Save(Piece piece)
         {
             if (IsNew(piece.Code))
@@ -52,7 +62,7 @@ namespace KitBoxAPP
         /// </summary>
         /// <returns><c>true</c> if this instance is new in the database; 
         /// otherwise, <c>false</c>.</returns>
-        /// <param name="code">Code.</param>
+        /// <param name="code">The id of a piece.</param>
         private bool IsNew(string code)
         {
             bool is_new = true;
@@ -83,7 +93,7 @@ namespace KitBoxAPP
         /// <summary>
         /// Add the specified piece in the database
         /// </summary>
-        /// <param name="piece">Piece.</param>
+        /// <param name="piece">The Piece to add in the database.</param>
         private bool Add(Piece piece)
         {
             bool success = false;
@@ -126,7 +136,7 @@ namespace KitBoxAPP
         /// <summary>
         /// Update the specified piece in the database.
         /// </summary>
-        /// <param name="piece">Piece.</param>
+        /// <param name="piece">The Piece to update in the database.</param>
         private bool Update(Piece piece)
         {
             bool success = false;
@@ -166,7 +176,7 @@ namespace KitBoxAPP
         /// <summary>
         /// Delete the specified piece_code from the database.
         /// </summary>
-        /// <param name="piece_code">Piece_code.</param>
+        /// <param name="piece_code">The id of the piece to delete.</param>
         public bool Delete(string piece_code)
         {
             bool success = false;
@@ -196,7 +206,7 @@ namespace KitBoxAPP
         /// <summary>
         /// Get the specified Piece from the giving code.
         /// </summary>
-        /// <param name="code">Code.</param>
+        /// <param name="code">The id of the piece to get.</param>
         public Piece Get(string code)
         {
             Piece piece;
@@ -284,8 +294,8 @@ namespace KitBoxAPP
         /// <summary>
         /// Creates an object from the result of a SQL comand.
         /// </summary>
-        /// <returns>The object.</returns>
-        /// <param name="rd">Rd.</param>
+        /// <returns>An instance of Piece.</returns>
+        /// <param name="rd">An SQLiteDataReader.</param>
         private Piece CreateObject(SQLiteDataReader rd)
         {
             Color color = new Color(rd.GetInt32(rd.GetOrdinal("code_color")),
@@ -308,7 +318,7 @@ namespace KitBoxAPP
         /// Gets the list of PriceSupplier for a given piece.
         /// </summary>
         /// <returns>The list of the PriceSupplier.</returns>
-        /// <param name="code_piece">Code_piece.</param>
+        /// <param name="code_piece">The id of a piece.</param>
         private List<PriceSupplier> GetPriceSuppliers(string code_piece)
         {
             List<PriceSupplier> lt = new List<PriceSupplier>();
