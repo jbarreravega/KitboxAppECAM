@@ -12,6 +12,7 @@ namespace KitBoxAPP
         private double price;
         private int delivery_time; // in days
 
+        //Constructor
         public PriceSupplier(Supplier supplier, double price, int delivery_time)
         {
             this.supplier = supplier;
@@ -19,6 +20,7 @@ namespace KitBoxAPP
             this.delivery_time = delivery_time;
         }
 
+        //Return supplier
         public Supplier Supplier
         {
             get
@@ -27,6 +29,7 @@ namespace KitBoxAPP
             }
         }
 
+        //Return price
         public double Price
         {
             get
@@ -39,6 +42,7 @@ namespace KitBoxAPP
             }
         }
 
+        //Return  delivery time
         public int DeliveryTime
         {
             get

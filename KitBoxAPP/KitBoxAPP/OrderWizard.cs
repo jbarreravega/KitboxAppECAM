@@ -11,6 +11,12 @@ namespace KitBoxAPP
         private List<Furniture> furniture;
         private string name_client, address_client;
 
+        /// <summary>
+        /// Constructor for a new Order
+        /// </summary>
+        /// <param name="furniture"></param>
+        /// <param name="name_client"></param>
+        /// <param name="address_client"></param>
         public OrderWizard(List<Furniture> furniture, string name_client,
                            string address_client)
         {
@@ -19,6 +25,9 @@ namespace KitBoxAPP
             this.address_client = address_client;
         }
 
+        /// <summary>
+        /// Constructor for a default order
+        /// </summary>
 		public OrderWizard()
 		{
 			this.furniture = new List<Furniture> ();
