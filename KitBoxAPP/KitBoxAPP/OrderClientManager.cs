@@ -16,7 +16,7 @@ namespace KitBoxAPP
         {
             this.db = db;
         }
-		
+
 		/// <summary>
 		/// Add order to DB and reserve it.
 		/// </summary>
@@ -50,10 +50,12 @@ namespace KitBoxAPP
             return success;
         }
 
-		/// <summary>
-		/// List all the orders with the specified status.
-		/// </summary>
+        /// <summary>
+        /// /Returns a List containing all the Orders
+        /// with a specific status
+        /// </summary>
 		/// <param name="status">A Status.</param>
+        /// <returns>A List of orders</returns>
         public List<Order> List(Status status)
         {
             SQLiteCommand cmd;
@@ -74,7 +76,7 @@ namespace KitBoxAPP
 
             return order_list;
         }
-
+		
 		/// <summary>
 		/// Mark an order as valid and remove its pieces from the database.
 		/// </summary>
@@ -88,9 +90,9 @@ namespace KitBoxAPP
 		/// <summary>
 		/// Changes the status of a given order with the given status.
 		/// </summary>
-		/// <returns><c>true</c>, if status was changed, <c>false</c> otherwise.</returns>
 		/// <param name="code_order">The id of the order.</param>
 		/// <param name="status">The new Status.</param>
+        /// <returns>True if changed, else false</returns>
         public bool ChangeStatus(string code_order, Status status)
         {
 			// Not implemented yet

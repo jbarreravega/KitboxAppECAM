@@ -14,18 +14,21 @@ namespace KitBoxAPP
 			name = "";
 		}
 
+        //Return status
 		public Status (int code, string name)
 		{
 			this.code = code;
 			this.name = name;
 		}
 
+        //Return code
 		public int Code
 		{
 			get { return code; }
 			set { code = value; }
 		}
 
+        //Return name
 		public string Name
 		{
 			get { return name; }
