@@ -1,4 +1,4 @@
-using System;
+    using System;
 using System.Collections.Generic;
 
 namespace KitBoxAPP
@@ -9,12 +9,14 @@ namespace KitBoxAPP
 		private List<Piece> pieces;
 		private Status status;
 
+        //Constructor
 		public Order ()
 		{
 			pieces = new List<Piece> ();
 			status = new Status ();
 		}
 
+        //Constructor using a list of pieces
 		public Order(List<Piece> pieces) : this ()
 		{
 			this.pieces = pieces;
@@ -23,11 +25,13 @@ namespace KitBoxAPP
 
 		public abstract double Price ();
 
+        //Add a piece to the order
 		public void AddPiece (Piece piece)
 		{
 			this.pieces.Add (piece);
 		}
 
+        //Remove a piece from the order
 		public Piece RemovePiece (string code_piece)
 		{
 			// To be implemented

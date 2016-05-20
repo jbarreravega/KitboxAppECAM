@@ -11,6 +11,7 @@ namespace KitBoxAPP
 		private int code;
         private string name, address;
 
+        //Constructor
         public Supplier(int code, string name, string address)
         {
 			this.code = code;
@@ -18,7 +19,9 @@ namespace KitBoxAPP
             this.address = address;
         }
 
-		public int Code
+
+        //Properties
+      	public int Code
 		{
 			get
 			{

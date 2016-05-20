@@ -11,11 +11,20 @@ namespace KitBoxAPP
 
 		public DBManager() : this("KitBox.sqlite") {}
 
+		/// <summary>
+		/// Initializes a new instance of the <see cref="KitBoxAPP.DBManager"/> class.
+		/// </summary>
+		/// <param name="debug">If set to <c>true</c> use the debug database 
+		/// instead of the production one.</param>
 		public DBManager(bool debug) : 
 			this(debug ? "KitBox.sqlite" : "KitBoxTest.sqilte")
 		{
 		}
 
+		/// <summary>
+		/// Initializes a new instance of the <see cref="KitBoxAPP.DBManager"/> class.
+		/// </summary>
+		/// <param name="db_name">The name of the database file.</param>
 		public DBManager (string db_name)
 		{
 			// Get the name of the directory where the database is.
@@ -57,22 +66,6 @@ namespace KitBoxAPP
 				return db;
 			}
 		}
-
-        /*public virtual List<double> Listarea()
-        {
-            double area = 0;
-            string sql = "";
-            List<double> listarea = new List<double>();
-            SQLiteCommand command = new SQLiteCommand(sql);
-            sql = "SELECT depth AND width FROM Stock WHERE name='Panneau HB'";
-            SQLiteDataReader reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                area = Convert.ToDouble("depth") * Convert.ToDouble("width");
-                listarea.Add(area);
-            } 
-            return listarea ;
-        }*/
 	}
 }
 

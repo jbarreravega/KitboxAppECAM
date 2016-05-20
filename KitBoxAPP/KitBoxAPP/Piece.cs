@@ -71,6 +71,12 @@ namespace KitBoxAPP
 			return -1.0;
 		}
 
+
+        /// <summary>
+        /// Gets the delivery time for a specific supplier
+        /// </summary>
+        /// <param name="code_supplier"></param>
+        /// <returns></returns>
 		public int DeliveryTime(int code_supplier)
 		{
 			foreach (PriceSupplier ps in PriceSuppliers)
@@ -83,6 +89,11 @@ namespace KitBoxAPP
 			return -1;
 		}
 
+        /// <summary>
+        /// Returns a string containing code, name and quantity
+        /// of the pieces
+        /// </summary>
+        /// <returns></returns>
 		public override string ToString()
 		{
 			string str = Code + " - " + Name + " - " + Quantity;
