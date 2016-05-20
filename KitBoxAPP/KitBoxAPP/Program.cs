@@ -8,19 +8,17 @@ namespace KitBoxAPP
 {
     static class Program
    {
-		private DBManager mgr;
-
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>
         [STAThread]
         static void Main()
         {
-			this.mgr = new DBManager ();
+			DBManager mgr = new DBManager ();
 
 			Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home_client(this.mgr));
+            Application.Run(new Home_client(mgr));
         }
     
 

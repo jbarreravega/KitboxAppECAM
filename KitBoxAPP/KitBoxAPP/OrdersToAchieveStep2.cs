@@ -11,9 +11,13 @@ using System.Windows.Forms;
 namespace KitBoxAPP
 {
     public partial class OrdersToAchieveStep2 : Form
-    {
-        public OrdersToAchieveStep2()
-        {
+	{
+		private DBManager mgr;
+
+		public OrdersToAchieveStep2(DBManager mgr)
+		{
+			this.mgr = mgr;
+
             InitializeComponent();
             button_home101.BackColor = System.Drawing.Color.DarkRed;
             button_orderOK.BackColor = System.Drawing.Color.LightBlue;
@@ -26,7 +30,7 @@ namespace KitBoxAPP
 
         private void button_home101_Click(object sender, EventArgs e)
         {
-            Home_staff optionForm = new Home_staff();
+			Home_staff optionForm = new Home_staff(this.mgr);
 
             this.Hide();
 

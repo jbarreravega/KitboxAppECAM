@@ -11,9 +11,13 @@ using System.Windows.Forms;
 namespace KitBoxAPP
 {
     public partial class ToGoToHomeStaff : Form
-    {
-        public ToGoToHomeStaff()
-        {
+	{
+		private DBManager mgr;
+
+		public ToGoToHomeStaff(DBManager mgr)
+		{
+			this.mgr = mgr;
+
             InitializeComponent();
         }
 
@@ -25,7 +29,7 @@ namespace KitBoxAPP
 
             if (passwd == password)
             {
-                Home_staff optionForm = new Home_staff();
+				Home_staff optionForm = new Home_staff(this.mgr);
 
                 this.Hide();
 
@@ -35,7 +39,7 @@ namespace KitBoxAPP
 
         private void button_homeT1_Click(object sender, EventArgs e)
         {
-            Home_client optionForm = new Home_client();
+			Home_client optionForm = new Home_client(this.mgr);
 
             this.Hide();
 

@@ -16,8 +16,9 @@ namespace KitBoxAPP
         public string name, firstname, delivery, phone, mail;
 
         public OrderStep1(DBManager mgr)
-        {
+		{
 			this.mgr = mgr;
+
             InitializeComponent();
             button_home1.BackColor = System.Drawing.Color.DarkRed;
             button_next1.BackColor = System.Drawing.Color.LightBlue;

@@ -16,7 +16,7 @@ namespace KitBoxAPP
 
         public Home_client(DBManager mgr)
         {
-			this.mgr = mgr;
+            this.mgr = mgr;
 
 			InitializeComponent();
             button_client.BackColor = System.Drawing.Color.Black;

@@ -11,9 +11,13 @@ using System.Windows.Forms;
 namespace KitBoxAPP
 {
     public partial class OrderStep7 : Form
-    {
-        public OrderStep7()
-        {
+	{
+		private DBManager mgr;
+
+		public OrderStep7(DBManager mgr)
+		{
+			this.mgr = mgr;
+
             InitializeComponent();
             button_home7.BackColor = System.Drawing.Color.DarkRed;
             button_next7.BackColor = System.Drawing.Color.LightBlue;
@@ -22,21 +26,21 @@ namespace KitBoxAPP
 
         private void label_step71_Click(object sender, EventArgs e)
         {
-            OrderStep1 optionForm = new OrderStep1();
+			OrderStep1 optionForm = new OrderStep1(this.mgr);
             this.Hide();
             optionForm.Show();
         }
 
         private void label_step72_Click(object sender, EventArgs e)
         {
-            OrderStep2 optionForm = new OrderStep2();
+			OrderStep2 optionForm = new OrderStep2(this.mgr);
             this.Hide();
             optionForm.Show();
         }
 
         private void label_step73_Click(object sender, EventArgs e)
         {
-            OrderStep3 optionForm = new OrderStep3();
+			OrderStep3 optionForm = new OrderStep3(this.mgr);
             this.Hide();
             optionForm.Show();
 
@@ -44,14 +48,14 @@ namespace KitBoxAPP
 
         private void label_step74_Click(object sender, EventArgs e)
         {
-            OrderStep4 optionForm = new OrderStep4();
+			OrderStep4 optionForm = new OrderStep4(this.mgr);
             this.Hide();
             optionForm.Show();
         }
 
         private void label_step75_Click(object sender, EventArgs e)
         {
-            OrderStep5 optionForm = new OrderStep5();
+			OrderStep5 optionForm = new OrderStep5(this.mgr);
             this.Hide();
             optionForm.Show();
         }
@@ -63,7 +67,7 @@ namespace KitBoxAPP
 
         private void button_next7_Click(object sender, EventArgs e)
         {
-            OrderStep8 Order8 = new OrderStep8();
+			OrderStep8 Order8 = new OrderStep8(this.mgr);
             this.Hide();
             Order8.ShowDialog();
             this.Show();
@@ -71,7 +75,7 @@ namespace KitBoxAPP
 
         private void button_home7_Click(object sender, EventArgs e)
         {
-            Home_client optionForm = new Home_client();
+			Home_client optionForm = new Home_client(this.mgr);
             this.Hide();
             optionForm.Show();
         }

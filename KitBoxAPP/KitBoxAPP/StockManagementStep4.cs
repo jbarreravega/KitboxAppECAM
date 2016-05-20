@@ -11,9 +11,13 @@ using System.Windows.Forms;
 namespace KitBoxAPP
 {
     public partial class StockManagementStep4 : Form
-    {
-        public StockManagementStep4()
-        {
+	{
+		private DBManager mgr;
+
+		public StockManagementStep4(DBManager mgr)
+		{
+			this.mgr = mgr;
+
             InitializeComponent();
             button_home113.BackColor = System.Drawing.Color.DarkRed;
             button_yes40.BackColor = System.Drawing.Color.Green;

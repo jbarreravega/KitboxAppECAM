@@ -11,9 +11,13 @@ using System.Windows.Forms;
 namespace KitBoxAPP
 {
     public partial class StockManagementStep2 : Form
-    {
-        public StockManagementStep2()
-        {
+	{
+		private DBManager mgr;
+
+		public StockManagementStep2(DBManager mgr)
+		{
+			this.mgr = mgr;
+
             InitializeComponent();
             button_home111.BackColor = System.Drawing.Color.DarkRed;
             button_yes29.BackColor = System.Drawing.Color.Green;
@@ -27,7 +31,7 @@ namespace KitBoxAPP
 
         private void button_no29_Click(object sender, EventArgs e)
         {
-            Home_staff optionForm = new Home_staff();
+			Home_staff optionForm = new Home_staff(this.mgr);
 
             this.Hide();
 
@@ -36,7 +40,7 @@ namespace KitBoxAPP
 
         private void button_home111_Click(object sender, EventArgs e)
         {
-            Home_staff optionForm = new Home_staff();
+			Home_staff optionForm = new Home_staff(this.mgr);
 
             this.Hide();
 
