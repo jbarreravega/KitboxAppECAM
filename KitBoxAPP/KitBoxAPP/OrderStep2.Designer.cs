@@ -5,9 +5,6 @@ namespace KitBoxAPP
 {
     partial class OrderStep2
     {
-        //private StockManager stock;
-        private DBManager mgr;
-        //private StockManager area = new StockManager("");
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -27,26 +24,6 @@ namespace KitBoxAPP
         }
 
         #region Windows Form Designer generated code
-
-
-        public List<Piece> Pannels()
-        {
-            mgr = new DBManager();
-            List<Piece> stucks = mgr.Stock.List();
-            List<Piece> pannels = new List<Piece>();
-            foreach (Piece stuck in stucks)
-            {
-                if (stuck.Code.StartsWith("PAH") == true)
-                {
-                    pannels.Add(stuck);
-                }
-                else
-                {
-                    continue;
-                }
-            }
-            return pannels;
-        }
 
         /// <summary>
         /// Required method for Designer support - do not modify

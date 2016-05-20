@@ -12,9 +12,13 @@ namespace KitBoxAPP
 {
     public partial class Home_client : Form
     {
-        public Home_client()
+		private DBManager mgr;
+
+        public Home_client(DBManager mgr)
         {
-            InitializeComponent();
+			this.mgr = mgr;
+
+			InitializeComponent();
             button_client.BackColor = System.Drawing.Color.Black;
             button_staff.BackColor = System.Drawing.Color.Black;
             button_catalog.BackColor = System.Drawing.Color.LightBlue;
@@ -23,20 +27,22 @@ namespace KitBoxAPP
 
         private void button_order_Click(object sender, EventArgs e)
         {
-            OrderStep1 Order1 = new OrderStep1();
+            OrderStep1 Order1 = new OrderStep1(this.mgr);
             this.Hide();
             Order1.ShowDialog();
             this.Show();
         }
 
-        private void button_staff_Click(object sender, EventArgs e)
-        {
-               /* ToGoToHomeStaff optionForm = new ToGoToHomeStaff();
+		private void button_staff_Click (object sender, EventArgs e)
+		{
+			/* 
+               ToGoToHomeStaff optionForm = new ToGoToHomeStaff();
 
                 this.Hide();
 
-                optionForm.Show();*/
+                optionForm.Show();
+			 */
             
-        }
+		}
     }
 }

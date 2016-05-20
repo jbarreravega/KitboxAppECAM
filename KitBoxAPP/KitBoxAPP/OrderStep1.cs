@@ -12,9 +12,12 @@ namespace KitBoxAPP
 {
     public partial class OrderStep1 : Form
     {
+		private DBManager mgr;
         public string name, firstname, delivery, phone, mail;
-        public OrderStep1()
+
+        public OrderStep1(DBManager mgr)
         {
+			this.mgr = mgr;
             InitializeComponent();
             button_home1.BackColor = System.Drawing.Color.DarkRed;
             button_next1.BackColor = System.Drawing.Color.LightBlue;
@@ -54,14 +57,14 @@ namespace KitBoxAPP
         public void button_next1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            OrderStep2 Order2 = new OrderStep2();
+            OrderStep2 Order2 = new OrderStep2(this.mgr);
             Order2.ShowDialog();
             this.Show();
         }
 
         public void button_home1_Click(object sender, EventArgs e)
         {
-            Home_client optionForm = new Home_client();
+            Home_client optionForm = new Home_client(this.mgr);
             this.Hide();
             optionForm.Show();
         }
