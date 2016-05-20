@@ -12,11 +12,27 @@ namespace KitBoxAPP
         private SQLiteConnection db;
 		private List<OrderClient> orders;
 
-        public OrderClientManager(SQLiteConnection db)
-        {
-            this.db = db;
-        }
+		public OrderClientManager(SQLiteConnection db) : this (db, true) {}
 
+		public OrderClientManager(SQLiteConnection db, bool create_list)
+		{
+			this.db = db;
+			if (create_list)
+			{
+				orders = List ();
+			} else
+			{
+				orders = new List<OrderClient> ();
+			}
+		}
+
+		/// <summary>
+		/// Reload the list of orders from the database.
+		/// </summary>
+		public void Reload()
+		{
+			orders = List ();
+		}
 
         //Adds order to DB and reserves it
         public bool Reserve(OrderClient order)
