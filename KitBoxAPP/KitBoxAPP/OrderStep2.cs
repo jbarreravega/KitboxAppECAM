@@ -29,7 +29,7 @@ namespace KitBoxAPP
 		/// </summary>
 		public List<Piece> Pannels()
 		{
-			List<Piece> stucks = mgr.Stock.Pieces;
+            List<Piece> stucks = mgr.Stock.Pieces;
 			List<Piece> pannels = new List<Piece>();
 			foreach (Piece stuck in stucks)
 			{
@@ -52,7 +52,7 @@ namespace KitBoxAPP
 
         private void button_next2_Click(object sender, EventArgs e)
         {
-            OrderStep3 Order3 = new OrderStep3();
+            OrderStep3 Order3 = new OrderStep3(this.mgr);
             this.Hide();
             Order3.ShowDialog();
             this.Show();

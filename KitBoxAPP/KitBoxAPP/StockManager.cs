@@ -359,12 +359,13 @@ namespace KitBoxAPP
             return lt;
         }
 
-        // Propoerties
+        // Properties
 
         public List<Piece> Pieces
         {
-            get;
-            set;
+            get {
+                return this.pieces;
+            }
         }
     }
 }

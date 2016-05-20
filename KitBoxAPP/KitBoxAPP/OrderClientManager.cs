@@ -19,7 +19,7 @@ namespace KitBoxAPP
             this.db = db;
             if (create_list)
             {
-                orders = List ();
+                //Not implemented yet
             } else
             {
                 orders = new List<OrderClient> ();
@@ -31,7 +31,7 @@ namespace KitBoxAPP
         /// </summary>
         public void Reload()
         {
-            orders = List ();
+            //Not implemented yet
         }
 
 
