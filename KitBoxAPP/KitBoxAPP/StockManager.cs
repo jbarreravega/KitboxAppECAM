@@ -9,37 +9,37 @@ namespace KitBoxAPP
         private SQLiteConnection db;
         private List<Piece> pieces;
 
-	/// <summary>
-	/// Initializes a new instance of the <see cref="KitBoxAPP.StockManager"/> class.
-	/// </summary>
-	/// <param name="db">The Db.</param>
+        /// <summary>
+        /// Initializes a new instance of the <see cref="KitBoxAPP.StockManager"/> class.
+        /// </summary>
+        /// <param name="db">The Db.</param>
         public StockManager (SQLiteConnection db) : this (db, true) {}
 
-	/// <summary>
-	/// Initializes a new instance of the <see cref="KitBoxAPP.StockManager"/> class.
-	/// </summary>
-	/// <param name="db">The Db.</param>
-	/// <param name="create_list">If set to <c>true</c> import all the pieces
-	/// from the database in a List attribute of this class.</param>
-	public StockManager(SQLiteConnection db, bool create_list)
-	{
-		this.db = db;
-		if (create_list)
-		{
-			pieces = List ();
-		} else
-		{
-			pieces = new List<Piece> ();
-		}
-	}
+        /// <summary>
+        /// Initializes a new instance of the <see cref="KitBoxAPP.StockManager"/> class.
+        /// </summary>
+        /// <param name="db">The Db.</param>
+        /// <param name="create_list">If set to <c>true</c> import all the pieces
+        /// from the database in a List attribute of this class.</param>
+        public StockManager(SQLiteConnection db, bool create_list)
+        {
+            this.db = db;
+            if (create_list)
+            {
+                pieces = List ();
+            } else
+            {
+                pieces = new List<Piece> ();
+            }
+        }
 
-	/// <summary>
-	/// Reload the list of pieces from the database.
-	/// </summary>
-	public void Reload ()
-	{
-		pieces = List ();
-	}
+        /// <summary>
+        /// Reload the list of pieces from the database.
+        /// </summary>
+        public void Reload ()
+        {
+            pieces = List ();
+        }
 
         /// <summary>
         /// Save the specified piece in the database.

@@ -10,34 +10,35 @@ namespace KitBoxAPP
     class OrderClientManager
     {
         private SQLiteConnection db;
-	private List<OrderClient> orders;
+        private List<OrderClient> orders;
 
-	public OrderClientManager(SQLiteConnection db) : this (db, true) {}
+        public OrderClientManager(SQLiteConnection db) : this (db, true) {}
 
-	public OrderClientManager(SQLiteConnection db, bool create_list)
-	{
-		this.db = db;
-		if (create_list)
-		{
-			orders = List ();
-		} else
-		{
-				orders = new List<OrderClient> ();
-		}
-	}
-	/// <summary>
-	/// Reload the list of orders from the database.
-	/// </summary>
-	public void Reload()
-	{
-		orders = List ();
-	}
+        public OrderClientManager(SQLiteConnection db, bool create_list)
+        {
+            this.db = db;
+            if (create_list)
+            {
+                orders = List ();
+            } else
+            {
+                orders = new List<OrderClient> ();
+            }
+        }
+
+        /// <summary>
+        /// Reload the list of orders from the database.
+        /// </summary>
+        public void Reload()
+        {
+            orders = List ();
+        }
 
 
-	/// <summary>
-	/// Add order to DB and reserve it.
-	/// </summary>
-	/// <param name="order">The Order to reserve.</param>
+        /// <summary>
+        /// Add order to DB and reserve it.
+        /// </summary>
+        /// <param name="order">The Order to reserve.</param>
         public bool Reserve(OrderClient order)
         {
             bool success = false;
@@ -94,25 +95,25 @@ namespace KitBoxAPP
             return order_list;
         }
 		
-	/// <summary>
-	/// Mark an order as valid and remove its pieces from the database.
-	/// </summary>
-	/// <param name="order">The Order to validate.</param>
+        /// <summary>
+        /// Mark an order as valid and remove its pieces from the database.
+        /// </summary>
+        /// <param name="order">The Order to validate.</param>
         public bool Valid(Order order)
         {
-	    // Not implemented yet
+            // Not implemented yet
             return false;
         }
 
-	/// <summary>
-	/// Changes the status of a given order with the given status.
-	/// </summary>
-	/// <param name="code_order">The id of the order.</param>
-	/// <param name="status">The new Status.</param>
+        /// <summary>
+        /// Changes the status of a given order with the given status.
+        /// </summary>
+        /// <param name="code_order">The id of the order.</param>
+        /// <param name="status">The new Status.</param>
         /// <returns>True if changed, else false</returns>
         public bool ChangeStatus(string code_order, Status status)
         {
-	    // Not implemented yet
+            // Not implemented yet
             return false;
         }
     }
